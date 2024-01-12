@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>dictionary</title>
+</head>
+<body>
+<p>dictionary object</p><br>
+<p>This method will set a value referred to by the key.</p>
+<h1>void set(string key, ? value)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>key</td>
+<td>The key to use.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>A variable of any type whose value you wish to associate with the specified key.</td>
+</tr>
+</table>
+<h2>Return value</h2>
+<p>None.</p>
+<h2>Remarks</h2>
+<p>If a particular key already exists in the dictionary, its value will be automatically overwritten.</p>
+<h2>Example</h2>
+<p>
+<pre>
+dictionary game_board; // Declare our dictionary.
+
+void main()
+{
+int value; // Declare a variable for retrieving values from a dictionary.
+// Set our values.
+game_board.set("1", 2); // Sets the value 2 to a key called 1.
+game_board.set("2", 4); // Sets the value 4 to a key called 2.
+game_board.get("1", value); // Retrieve value for 1.
+alert("Dictionary example", "current value=" + value);
+game_board.get("2", value); // Retrieve value for 2.
+alert("Dictionary example", "current value=" + value);
+game_board.delete_all(); // Delete all the values.
+}
+</pre>
+</p>
+</body>
+</html>

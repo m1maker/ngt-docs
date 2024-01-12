@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>functions</title>
+</head>
+<body>
+<p>key_pressed</p><br>
+<p>This function checks if a particular key on the keyboard has just been pushed down.<br></p>
+<h1>bool key_pressed(int key)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>key</td>
+<td>One of the NGT key name constants, see general/keys for a full list.</td>
+</tr>
+</table>
+<h2>Return value</h2>
+<p>true if the key has just been pushed down, false if it has not or if an error occurs.</p>
+<h2>Remarks</h2>
+<p>The difference between key_down and key_pressed is that key_pressed will only return true when the user first pushes down the key, while key_down will continue returning true until the key is released again.</p>
+<h2>Example</h2>
+<p>
+<pre>
+// Wait for the user to hold down alt and press f4 before closing the program.
+void main()
+{
+show_game_window("Test Game");
+while(true)
+{
+update_game_window();
+if(key_down(SDLK_LALT) && key_pressed(SDLK_F4))
+{
+quit();
+}
+// Other code goes here.
+}
+}
+</pre>
+</p>
+</body>
+</html>

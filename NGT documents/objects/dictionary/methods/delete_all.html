@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>dictionary</title>
+</head>
+<body>
+<p>dictionary object</p><br>
+<p>This method will delete all key and value pairs currently present in the dictionary.</p>
+<h1>bool delete_all()</h1>
+<h2>Parameters</h2>
+<p>None.</p>
+<h2>Return value</h2>
+<p>true on success, false on failure.</p>
+<h2>Remarks</h2>
+<p>
+This method clears all key-value pairs present in the dictionary, effectively resetting it.
+</p>
+<h2>Example</h2>
+<p>
+<pre>
+// Set some values, then delete them all.
+dictionary game_board; // Declare our dictionary.
+
+void main()
+{
+// Set our values.
+game_board.set("1", 2); // Sets the value 2 to a key called 1.
+game_board.set("2", 4); // Sets the value 4 to a key called 2.
+game_board.delete_all(); // Delete all the values.
+}
+</pre>
+</p>
+</body>
+</html>

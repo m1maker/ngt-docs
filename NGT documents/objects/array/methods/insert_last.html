@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>array</title>
+</head>
+<body>
+<p>array object</p><br>
+<p>This method will insert a new value at the end of the array.<br></p>
+<h1>void insert_last(? value)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>value</td>
+<td>A value of the specified type in the array declaration to place at that index.</td>
+</tr>
+</table>
+<h2>Return value</h2>
+<p>None.</p>
+<h2>Remarks</h2>
+<p>None.</p>
+<h2>Example</h2>
+<p>
+<pre>
+string[] names;
+
+void main()
+{
+names.insert_last("harry");
+for(uint counter=0; counter&lt;names.length(); counter++)
+{
+alert("Names", "Element "+counter+" contains the name "+names[counter]+".");
+}
+}
+</pre>
+</p>
+</body>
+</html>

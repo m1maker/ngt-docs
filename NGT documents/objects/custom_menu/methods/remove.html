@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>custom_menu</title>
+</head>
+<body>
+<p>custom_menu object</p><br>
+<p>This function removes the item through its reference name.</p>
+<h1>bool remove(string ref)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>Variable</th><th>Description</th></tr>
+<tr>
+<td>ref</td>
+<td>The name of the reference that you want to be removed.</td>
+</tr>
+</table>
+<h2>Return Value</h2>
+<p>True on success, false on failure.</p>
+<h2>Remarks</h2>
+<p>This function is useful to remove an item through its reference. If the function fails, the error flag will be set to cme_faildelexist.</p>
+<h2>Example</h2>
+<p>
+<pre>
+// Make a simple menu.
+#include "custom_menu.ngt"
+
+custom_menu menu;
+
+void main()
+{
+menu.create("Example menu", true);
+menu.add("item", "i");
+while(true)
+{
+menu.monitor();
+update_game_window();
+if(key_pressed(SDLK_RETURN))
+{
+alert("result", menu.get_current_ref());
+bool success = menu.remove("i");
+if (success)
+{
+// Item removed successfully.
+}
+quit();
+}
+}
+}
+</pre>
+</p>
+</body>
+</html>

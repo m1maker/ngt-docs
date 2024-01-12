@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>functions</title>
+</head>
+<body>
+<p>speak</p><br>
+<p>This function speaks some text using a screen reader which is determined automatically.<br></p>
+<h1>void speak(string text, bool stop = true);</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>text</td>
+<td>The text that is to be spoken.</td>
+</tr>
+<tr>
+<td>stop</td>
+<td>Toggle whether the previously speaking speech should be stopped. (Default: true)</td>
+</tr>
+</table>
+<h2>Return value</h2>
+<p>None</p>
+<h2>Remarks</h2>
+<p>This function speaks some text using a screen reader which is determined automatically.</p>
+<h2>Example</h2>
+<p>
+<pre>
+void main()
+{
+init_engine();
+speak("I am a screen reader");
+}
+</pre>
+</p>
+</body>
+</html>

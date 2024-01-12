@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>functions</title>
+</head>
+<body>
+<p>clipboard_read_text</p><br>
+<p>This function reads text from the clipboard.<br></p>
+<h1>string clipboard_read_text()</h1>
+<h2>Parameters</h2>
+<p>None</p>
+<h2>Return value</h2>
+<p>The text stored in the clipboard on success, or an empty string on failure.</p>
+<h2>Remarks</h2>
+<p>None</p>
+<h2>Example</h2>
+<p>
+<pre>
+void main()
+{
+clipboard_copy_text("Hello");
+alert("Clipboard text", clipboard_read_text());
+}
+</pre>
+</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>array</title>
+</head>
+<body>
+<p>array object</p><br>
+<p>This method sorts the items in an array in ascending order.<br></p>
+<h1>void sort_asc(uint start_index, uint count)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>start_index</td>
+<td>The index to begin sorting from.</td>
+</tr>
+<tr>
+<td>count</td>
+<td>The number of elements to sort.</td>
+</tr>
+</table>
+<h2>Return value</h2>
+<p>None.</p>
+<h2>Remarks</h2>
+<p>This method is overloaded, and can be called with no parameters. If this is the case, the entire array will be sorted.</p>
+<p>The start_index parameter is 0-based.</p>
+<p>Please note: To sort an array of classes it is necessary for the class to overload the comparison operator.</p>
+<h2>Example</h2>
+<p>
+<pre>
+// Declare an array, sort its values and display them. We will use the extended declaration to show how to manually sort the array.
+
+void main()
+{
+string[] names(2);
+names[0] = "harry";
+names[1] = "ngt";
+names.sort_asc(0, names.length());
+for (int counter = 0; counter < names.length(); counter++)
+{
+alert("Names", "Element " + counter + " contains the name " + names[counter] + ".");
+}
+}
+</pre>
+</p>
+</body>
+</html>

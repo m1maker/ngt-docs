@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>sound</title>
+</head>
+<body>
+<p>sound object</p><br>
+<p>This method will close any sound associated with the object.</p>
+<h1>bool close()</h1>
+<h2>Parameters</h2>
+<p>None.</p>
+<h2>Return value</h2>
+<p>true on success, false on failure.</p>
+<h2>Remarks</h2>
+<p>
+Closing a sound releases the current sound memory associated with the object, saving resources while keeping the object available for future use. It's automatically executed when a sound object is destroyed, eliminating the need to manually call it for cleanup, for instance, at the script's end. This method also executes if "load" or "stream" is called on an object already associated with a sound.
+</p>
+<h2>Example</h2>
+<p>
+<pre>
+// Load a sound into memory, play it and close it.
+void main()
+{
+init_engine();
+sound test;
+test.load("c:\\windows\\media\\ding.wav");
+test.play_wait();
+test.close();
+}
+</pre>
+</p>
+</body>
+</html>

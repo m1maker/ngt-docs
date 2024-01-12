@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>array</title>
+</head>
+<body>
+<p>array object</p>
+<p>This method will remove the final value in the array.</p>
+<h1>void remove_last()</h1>
+<h2>Parameters</h2>
+<p>None.</p>
+<h2>Return value</h2>
+<p>None.</p>
+<h2>Remarks</h2>
+<p>On the outside, this method simply does the equivalent of array.resize(array.length()-1).</p>
+<h2>Example</h2>
+<pre>
+string[] names(2);
+
+void main()
+{
+names[0]="harry";
+names[1]="ngt";
+names.remove_last();
+for(uint counter=0; counter<names.length(); counter++)
+{
+alert("Names", "Element "+counter+" contains the name "+names[counter]+".");
+}
+}
+</pre>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>functions</title>
+</head>
+<body>
+<p>stop_speech</p><br>
+<p>This function will stop any information that is currently being spoken by the screen reader.<br></p>
+<h1>void stop_speech()</h1>
+<h2>Parameters</h2>
+<p>None</p>
+<h2>Return value</h2>
+<p>None</p>
+<h2>Remarks</h2>
+<p>This function will stop any information that is currently being spoken by the screen reader.</p>
+<h2>Example</h2>
+<p>
+<pre>
+// Speak some text and stop it after 3 seconds.
+void main()
+{
+init_engine();
+speak("Hi. I'm now speaking for 3 seconds, before which the speech is stopped. I hope everything is fine, and take care of yourself! have a nice day!");
+wait(3000);
+stop_speech();
+}
+</pre>
+</p>
+</body>
+</html>

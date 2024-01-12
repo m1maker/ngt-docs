@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>sound</title>
+</head>
+<body>
+<p>sound object</p><br>
+<p>This method will load a sound into memory for playback.</p>
+<h1>bool load(string filename, bool hrtf)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>Parameter</th><th>Description</th></tr>
+<tr>
+<td>filename</td>
+<td>The file to open.</td>
+</tr>
+<tr>
+<td>hrtf</td>
+<td>Toggle whether the sound should use HRTF.</td>
+</tr>
+</table>
+<h2>Return value</h2>
+<p>true on success, false on failure.</p>
+<h2>Remarks</h2>
+<p>
+A loaded sound is completely put into memory when it is first created, utilizing more system memory but significantly reducing CPU usage. Loaded sounds are suitable for quick and frequent playback, such as footsteps, gunshots, or character noises.
+</p>
+<p>
+The engine optimizes memory usage by loading multiple instances of the same sound into memory only once, even when utilized by multiple objects. For example, having 50 enemies with two footsteps each won't load 100 independent sound objects into memory.
+</p>
+<h2>Example</h2>
+<p>
+<pre>
+// Load a sound into memory and play it.
+void main()
+{
+init_engine();
+sound test;
+test.load("c:\\windows\\media\\ding.wav", true);
+test.play_wait();
+test.close();
+}
+</pre>
+</p>
+</body>
+</html>

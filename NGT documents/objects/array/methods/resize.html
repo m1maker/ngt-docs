@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>array</title>
+</head>
+<body>
+<p>array object</p>
+<p>This method resizes an array object.</p>
+<h1>void resize(uint new_length)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>new_length</td>
+<td>The new length of the array. A value of 0 means the array is reset completely.</td>
+</tr>
+</table>
+<h2>Return value</h2>
+<p>None.</p>
+<h2>Remarks</h2>
+<p>
+If the new_length parameter is greater than the current length, the relevant number of empty values will be added to the array. 
+If the value is less, the array is truncated from right to left.
+</p>
+<h2>Example</h2>
+<pre>
+// Declare an array and display its values.
+
+void main()
+{
+string[] names(5);
+names[0]="a";
+names[1]="b";
+names[2]="c";
+names[3]="d";
+names[4]="e";
+names.resize(names.length()+1);
+names[5]="f";
+for(uint counter=0; counter<names.length(); counter++)
+{
+alert("Names", "Element "+counter+" contains the name "+names[counter]+".");
+}
+}
+</pre>
+</body>
+</html>

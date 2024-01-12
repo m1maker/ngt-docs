@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>filesystem</title>
+</head>
+<body>
+<p>filesystem object</p><br>
+<p>This function sets the current path.</p>
+<h1>bool change_current_path(string path)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>path</td>
+<td>The new path to set as the current path.</td>
+</tr>
+</table>
+<h2>Return Value</h2>
+<p>true on success, false on failure.</p>
+<h2>Remarks</h2>
+<p>Both slash (/) and backslash (\) can be used for the path.</p>
+<h2>Example</h2>
+<p>
+<pre>
+void main()
+{
+filesystem f;
+f.change_current_path("D:\\NGT");
+}
+</pre>
+</p>
+</body>
+</html>

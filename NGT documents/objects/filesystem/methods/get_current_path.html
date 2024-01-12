@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>filesystem</title>
+</head>
+<body>
+<p>filesystem object</p><br>
+<p>the ge_current_path function returns the current path where the script is executed.
+<h1>string get_current_path()</h1>
+<h2>Parameters</h2>
+<p>none</p>
+<h2>Return Value</h2>
+<p>a string of the current path on success, an empty string on failure.</p>
+<h2>Remarks</h2>
+<p>This function returns the current path where the script is executed. You can also change the current path; see the change_current_path method.</p>
+<h2>Example</h2>
+<p>
+<pre>
+filesystem f;
+void main()
+{
+alert("hello", "The current located script path is, " + f.get_current_path());
+}
+</pre>
+</p>
+</body>
+</html>

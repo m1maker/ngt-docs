@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>functions</title>
+</head>
+<body>
+<p>read_environment_variable</p><br>
+<p>This function reads the value of a user specific or system-wide environment variable.</p>
+<h1>string read_environment_variable(string name)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>name</td>
+<td>The name of the environment variable to read.</td>
+</tr>
+</table>
+<h2>Return Value</h2>
+<p>A string containing the retrieved value on success, or an empty string on failure.</p>
+<h2>Remarks</h2>
+<p>Environment variables are pieces of information that are either related to the operating system or to the current user. This function can retrieve both types.</p>
+<p>The environment variable names are not case sensitive.</p>
+<h2>Example</h2>
+<p>
+<pre>
+// Try to retrieve some information about the username.
+void main()
+{
+string value = read_environment_variable("USERNAME");
+if (value == "")
+{
+alert("Error", "An empty string is retrieved");
+quit();
+}
+alert("Value", value);
+}
+</pre>
+</p>
+</body>
+</html>

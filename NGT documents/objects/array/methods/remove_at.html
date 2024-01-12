@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>array</title>
+</head>
+<body>
+<p>array object</p><br>
+<p>This method will remove an existing value at a specified position in an array.<br></p>
+<h1>void remove_at(int position)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>position</td>
+<td>The index of the element to remove.</td>
+</tr>
+</table>
+<h2>Return value</h2>
+<p>None.</p>
+<h2>Remarks</h2>
+<p>Once the value has been removed, the array will be automatically resized to reflect the change.</p>
+<h2>Example</h2>
+<p>
+<pre>
+string[] names(2);
+
+void main()
+{
+names[0]="harry";
+names[1]="ngt";
+names.remove_at(1);
+for(uint counter=0; counter<names.length(); counter++)
+{
+alert("Names", "Element "+counter+" contains the name "+names[counter]+".");
+}
+}
+</pre>
+</p>
+</body>
+</html>

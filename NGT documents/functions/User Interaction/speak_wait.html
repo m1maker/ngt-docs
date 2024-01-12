@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>functions</title>
+</head>
+<body>
+<p>speak_wait</p><br>
+<p>This function speaks some text using a screen reader which is determined automatically and wait for it to finish.<br></p>
+<h1>void speak_wait(string text, bool stop = true);</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>text</td>
+<td>The text that is to be spoken.</td>
+</tr>
+<tr>
+<td>stop</td>
+<td>Toggle whether the previously speaking speech should be stopped. (Default: true)</td>
+</tr>
+</table>
+<h2>Return value</h2>
+<p>None</p>
+<h2>Remarks</h2>
+<p>This function speaks some text using a screen reader which is determined automatically and pause the execution until it is spoken.</p>
+<p>Because script execution is paused while the text inside the speak_wait method is being spoken, it cannot be stopped or interrupted.</p>
+<h2>Example</h2>
+<p>
+<pre>
+void main()
+{
+init_engine();
+speak_wait("I am a screen reader");
+}
+</pre>
+</p>
+</body>
+</html>
