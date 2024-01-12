@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>timer</title>
+</head>
+<body>
+<p>timer object</p><br>
+<p>This function forces the time by microseconds.</p>
+<h1>void force_micros(uint64 micros)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>micros</td>
+<td>The microseconds to set the time.</td>
+</tr>
+</table>
+<h2>Return Value</h2>
+<p>None</p>
+<h2>Remarks</h2>
+<p>This method forces the time to set to a specified number of microseconds.</p>
+<h2>Example</h2>
+<p>
+<pre>
+void main()
+{
+timer c;
+c.force_micros(2000); // Forced the time to 2000 microseconds. Thus, the timer will move to 2000 microseconds.
+}
+</pre>
+</p>
+</body>
+</html>
