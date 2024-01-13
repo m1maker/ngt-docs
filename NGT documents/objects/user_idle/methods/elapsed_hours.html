@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>user_idle</title>
+</head>
+<body>
+<p>user_idle object</p><br>
+<p>This function returns the number of hours that the user_idle has elapsed.</p>
+<h1>uint64 elapsed_hours()</h1>
+<h2>Parameters</h2>
+<p>None.</p>
+<h2>Return Value</h2>
+<p>The number of hours that the user_idle has elapsed.</p>
+<h2>Remarks</h2>
+<p>This function is widely used to retrieve the elapsed time in hours from the user_idle object.</p>
+<h2>Example</h2>
+<p>
+<pre>
+// Simple, wait for the users to press enter to exit.
+void main()
+{
+alert("Welcome", "On the next screen, you can press enter to exit.");
+show_game_window("Test user_idle");
+user_idle c;
+while (true)
+{
+update_game_window();
+if (key_pressed(SDLK_RETURN))
+{
+c.pause();
+alert("OK", "The user_idle stopped and indicates that it was elapsed to " + c.elapsed_hours());
+break;
+}
+}
+quit();
+}
+</pre>
+</p>
+</body>
+</html>
