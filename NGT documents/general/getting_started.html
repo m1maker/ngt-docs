@@ -346,6 +346,91 @@ switch(number % 50)
 
 <p>Switch...case statements allow nesting if required.</p>
 
+<h2>7. Loops</h2>
+<p>After experimenting with if statements, it's time to delve into the concept of loops. Loops are sections of code that execute repeatedly until a specific condition is met. They are commonly used in games for tasks like continuously checking keystrokes and events.</p>
+
+<h3>7.1. While Loops</h3>
+<p>Take a look at the following code example:</p>
+
+<pre>
+while (key_pressed(SDLK_ESCAPE)==false)
+{
+update_game_window();
+}
+</pre>
+
+<p>The loop runs as long as the escape key is not pressed. The code inside the loop is executed repeatedly.</p>
+
+<p>If you want to perform a task a specific number of times, you can use a while loop. Here's an example that runs a code block 1000 times:</p>
+
+<pre>
+int x=0;
+while(x<1000)
+{
+// Put your code here.
+x++;
+}
+</pre>
+
+<h3>7.2. Do While Loops</h3>
+<p>Do while loops are similar but ensure that the code block is executed at least once. Here's an example:</p>
+
+<pre>
+do
+{
+update_game_window();
+}
+while(!key_pressed(SDLK_ESCAPE));
+</pre>
+
+<p>Unlike while loops, the condition is checked at the end of the loop. The exclamation mark before the condition indicates the loop should repeat as long as the condition is false.</p>
+
+<h3>7.3. For Loops</h3>
+<p>For loops are powerful and mainly used for counting. They combine loop control elements into one statement. Here's an example:</p>
+
+<pre>
+for(int x=0; x<=10; x++)
+{
+//loop code goes here.
+}
+</pre>
+
+<p>The for statement includes initialization, loop continuation condition, and reassignment in a single line.</p>
+
+<p>Here's another example with a different reassignment expression:</p>
+
+<pre>
+for(x=1; x<1000; x*=2)
+{
+//code goes here
+}
+</pre>
+
+<h3>7.4. Break and Continue</h3>
+<p>There are scenarios where you might want to break out of a loop for various reasons. The following example shows the use of break and continue:</p>
+
+<pre>
+while(true)
+{
+if(something==true)
+{
+break;
+}
+if(something_else==true)
+{
+break;
+}
+if(yet_another_variable==true)
+{
+continue;
+}
+// more code here...
+update_game_window();
+}
+</pre>
+
+<p>The loop has no specific condition (while(true)), creating an endless loop. The break statement terminates the loop based on certain conditions, and the continue statement skips the rest of the cycle and moves to the next iteration.</p>
+
 <h2>Using Multiple Scripts</h2>
 <p>As your game grows larger, managing everything within a single script becomes unmanageable. Hence, the necessity to utilize multiple scripts arises.</p>
 
