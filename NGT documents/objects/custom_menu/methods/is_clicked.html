@@ -4,20 +4,20 @@
 </head>
 <body>
 <p>custom_menu object</p><br>
-<p>This function removes the item through its reference name.</p>
-<h1>bool remove(string ref)</h1>
+<p>this method checks whether a given reference is clicked</p>
+<h1>bool is_clicked(string ref)</h1>
 <h2>Parameters</h2>
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
 <tr>
 <td>ref</td>
-<td>The name of the reference that you want to be removed.</td>
+<td>The name of the reference that you want to check.</td>
 </tr>
 </table>
 <h2>Return Value</h2>
 <p>True on success, false on failure.</p>
 <h2>Remarks</h2>
-<p>This function is useful to remove an item through its reference. If the function fails, the error flag will be set to cme_faildelexist.</p>
+<p>This function is useful to check whether the given reference is clicked.</p>
 <h2>Example</h2>
 <p>
 <pre>
@@ -29,18 +29,15 @@ custom_menu menu;
 void main()
 {
 menu.create("Example menu", true);
-menu.add("item", "i");
+menu.add_clickbox("item", "i", true);
 while(true)
 {
 menu.monitor();
 update_game_window();
-if(menu.is_clicked("i"))
-{
-alert("result", menu.get_current_ref());
-bool success = menu.remove("i");
+bool success = menu.is_clicked("i");
 if (success)
 {
-// Item removed successfully.
+// Item is clicked.
 }
 quit();
 }

@@ -26,7 +26,7 @@ while(true)
 {
 menu.monitor();
 update_game_window();
-if(key_pressed(SDLK_RETURN))
+if(menu.is_clicked("i"))
 {
 alert("result", menu.get_current_ref());
 quit();

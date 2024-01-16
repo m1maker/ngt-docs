@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>custom_menu</title>
+</head>
+<body>
+<p>custom_menu object</p><br>
+<p>This adds the checkbox item to the menu.</p>
+<h1>bool add_checkbox(string name, string ref, bool checked)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>Variable</th><th>Description</th></tr>
+<tr>
+<td>name</td>
+<td>The specified item.</td>
+</tr>
+<tr>
+<td>ref</td>
+<td>The reference name for the item.</td>
+</tr>
+<tr>
+<td>checked</td>
+<td>an optional parameter, to set the status of the checkbox. default is false, meaning the checkbox will not be checked.</td>
+</tr>
+</table>
+<h2>Return Value</h2>
+<p>True on success, false on failure.</p>
+<h2>Remarks</h2>
+<p>This function adds the item into the menu. Make sure that the reference names are not the same as each other, as this will make the references unusable. The reference will be returned with the value after the menu is run (e.g., result == "back").</p>
+<h2>Example</h2>
+<p>
+<pre>
+// Make a simple menu.
+#include "custom_menu.ngt"
+void main()
+{
+show_game_window("menu test");
+custom_menu c;
+bool success = c.add_checkbox("item1", "i1",true);
+if (success)
+{
+// Item added successfully.
+}
+}
+</pre>
+</p>
+</body>
+</html>
