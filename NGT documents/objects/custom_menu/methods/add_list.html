@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>custom_menu</title>
+</head>
+<body>
+<p>custom_menu object</p><br>
+<p>This adds the list to the menu.</p>
+<h1>bool add_list(string i, string ref, bool multi)</h1>
+<h2>Parameters</h2>
+<table>
+<tr><th>Variable</th><th>Description</th></tr>
+<tr>
+<td>i</td>
+<td>The specified item.</td>
+</tr>
+<tr>
+<td>ref</td>
+<td>The reference name for the item.</td>
+</tr>
+<tr>
+<td>multi</td>
+<td>an optional parameter, to set the status of the list multiselection. default is false, meaning the list will not be multiple.</td>
+</tr>
+</table>
+<h2>Return Value</h2>
+<p>True on success, false on failure.</p>
+<h2>Remarks</h2>
+<p>This function adds the list into the menu. Make sure that the reference names are not the same as each other, as this will make the references unusable. The reference will be returned with the value after the menu is run (e.g., result == "back").</p>
+
+</body>
+</html>
