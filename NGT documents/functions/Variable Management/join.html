@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>functions</title>
+</head>
+<body>
+<p>join</p><br>
+<p>this function returns a string joined from array based on the seperater</p>
+<h1>string join(string[] array, string sep)</h1>
+<h2>parameters</h2>
+<table>
+<tr><th>variable</th><th>description</th></tr>
+<tr>
+<td>array</td>
+<td>an array to base</td>
+</tr>
+<tr>
+<td>sep</td>
+<td>the seperater, such as \r\n for new line</td>
+</tr>
+</table>
+<h2>return value</h2>
+<p>a string with the joined data on success, an empty string on failure</p>
+<h2>remarks</h2>
+<p>none</p>
+<h2>example</h2>
+<p>
+<pre>
+void main()
+{
+string[] a={"hello","world"};
+string final=join(a, " ");
+alert("final",final); //output should be hello world
+}
+</pre>
+</p>
+</body>
+</html>
