@@ -5,7 +5,7 @@
 <body>
 <p>show_game_window</p><br>
 <p>This function displays the main window of your game on the user's screen.<br></p>
-<h1>bool show_game_window(string title, int width, int height, bool closable)<br></h1>
+<h1>void show_game_window(string title, int width, int height, bool closable)<br></h1>
 <h2>Parameters</h2>
 <table>
 <tr><th>variable</th><th>description</th></tr>
@@ -27,11 +27,11 @@
 </tr>
 </table>
 <h2>Return value</h2>
-<p>true on success, false on failure.</p>
+<p>none</p>
 <h2>Remarks</h2>
 <p>Until this function is called your game window will be invisible, thus not allowing the user to set focus to it. This in turn means that you will not be able to accept keyboard input before you call this function, and so you will usually want to do this at the very beginning of your script.</p>
 <br>
-<p>It is perfectly legal to call this function more than once during the course of your game's execution, should you wish to change the title of the window at any given time.</p>
+<p>It is never legal to call this function more than once during the course of your game's execution, doing so may result more than 1 windows appearrence.</p>
 
 <h2>Example</h2>
 <p>
@@ -43,6 +43,7 @@ void main()
 show_game_window("ngt test window",400,600);
 while(true)
 {
+delay(5);
 update_game_window();
 }
 }
