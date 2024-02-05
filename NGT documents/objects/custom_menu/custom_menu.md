@@ -30,22 +30,20 @@ The custom_menu object requires the following libraries:
 Without the above libraries, the compiler will issue an error, indicating which files are required.
 
 ## Example
-
-
-```
-// Make a menu.
-#include "custom_menu.ngt"
-void main()
-{
-show_game_window("menu test");
-custom_menu c;
-c.add("item1", "i1");
-c.add("item2", "i2");
-c.add("go back", "back");
-while (true)
-{
-update_game_window();
-}
-}
-
-```
+    
+    
+    // Make a menu.
+    #include "custom_menu.ngt"
+    void main()
+    {
+    show_game_window("menu test");
+    custom_menu c;
+    c.add("item1", "i1");
+    c.add("item2", "i2");
+    c.add("go back", "back");
+    while (true)
+    {
+    update_game_window();
+    }
+    }
+    

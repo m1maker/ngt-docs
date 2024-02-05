@@ -11,7 +11,7 @@ This method returns the value of a given slider.
 
 ## Parameters
 
-||| Variable| Description  
+Variable| Description  
 ---|---  
 ref | The reference of the menu item to the slider.  
   

@@ -11,7 +11,7 @@ This function returns the sine of an angle of x radians.
 
 ## Parameters
 
-||| Variable| Description  
+Variable| Description  
 ---|---  
 x | A value representing an angle expressed in radians that will be calculated.  
   
@@ -24,14 +24,12 @@ The sine of x.
 None.
 
 ## Example
-
-
-```
-void main()
-{
-double param = 30.0;
-double result = sin(param * 3.14159 / 180);
-alert("sin test", "The sin of " + param + " is " + result + ".");
-}
-
-```
+    
+    
+    void main()
+    {
+    double param = 30.0;
+    double result = sin(param * 3.14159 / 180);
+    alert("sin test", "The sin of " + param + " is " + result + ".");
+    }
+    

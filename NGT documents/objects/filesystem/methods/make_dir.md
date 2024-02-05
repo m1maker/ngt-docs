@@ -11,7 +11,7 @@ This function creates the given directories.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 dirs | The directories to create.  
   

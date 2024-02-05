@@ -4,7 +4,7 @@ datetime object
 
 # properties
 
-||| variable| description  
+variable| description  
 ---|---  
 year | the year.  
 month | the month.  

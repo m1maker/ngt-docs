@@ -11,7 +11,7 @@ this method sets the focus of the menu.
 
 ## parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 ref / per | the reference name of the item, or the position.  
   

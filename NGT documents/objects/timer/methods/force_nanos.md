@@ -11,7 +11,7 @@ This function forces the time by nano seconds.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 nanos | The nano seconds to set the time.  
   
@@ -24,13 +24,11 @@ None
 This method forces the time to set to a specified number of nano seconds.
 
 ## Example
-
-
-```
-void main()
-{
-timer c;
-c.force_nanos(2000); // Forced the time to 2000 nano seconds. Thus, the timer will move to 2000 nano seconds.
-}
-
-```
+    
+    
+    void main()
+    {
+    timer c;
+    c.force_nanos(2000); // Forced the time to 2000 nano seconds. Thus, the timer will move to 2000 nano seconds.
+    }
+    

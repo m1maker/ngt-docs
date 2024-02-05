@@ -22,19 +22,17 @@ True if the string is uppercase, false otherwise.
 None.
 
 ## Example
-
-
-```
-// Declare a string and check if it is uppercase.
-void main()
-{
-string example = "Good job!";
-if (example.is_upper())
-{
-alert("uppercase", "The string seems to be uppercase");
-quit();
-}
-alert("Information", "The string is not uppercase");
-}
-
-```
+    
+    
+    // Declare a string and check if it is uppercase.
+    void main()
+    {
+    string example = "Good job!";
+    if (example.is_upper())
+    {
+    alert("uppercase", "The string seems to be uppercase");
+    quit();
+    }
+    alert("Information", "The string is not uppercase");
+    }
+    

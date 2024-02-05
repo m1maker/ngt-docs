@@ -11,7 +11,7 @@ The array object is used to store multiple values of the same type.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 number_of_elements | An optional parameter that specifies the number of elements to create.  
   
@@ -22,20 +22,18 @@ The array object is unique to any other object, since it is declared as and beha
 Please note that if an error occurs while working with arrays, the NGT engine will terminate with a runtime error rather than silently setting an error code. Therefore it is essential that you take great care when working with arrays. 
 
 ## Example
-
-
-```
-// Declare an array and display its values.
-
-void main()
-{
-string[] names(2);
-names[0] = "ngt";
-names[1] = "harry";
-for(uint counter = 0; counter < names.length(); counter++)
-{
-alert("Names", "Element " + counter + " contains the name " + names[counter] + ".");
-}
-}
-
-```
+    
+    
+    // Declare an array and display its values.
+    
+    void main()
+    {
+    string[] names(2);
+    names[0] = "ngt";
+    names[1] = "harry";
+    for(uint counter = 0; counter < names.length(); counter++)
+    {
+    alert("Names", "Element " + counter + " contains the name " + names[counter] + ".");
+    }
+    }
+    

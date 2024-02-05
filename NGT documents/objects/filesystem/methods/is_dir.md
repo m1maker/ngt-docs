@@ -11,7 +11,7 @@ This function checks whether a given name corresponds to a directory.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 name | The name to check whether it corresponds to a directory.  
   

@@ -11,7 +11,7 @@ This function forces the time by minutes.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 minutes | The minutes to set the time.  
   
@@ -24,13 +24,11 @@ None
 This method forces the time to set to a specified number of minutes.
 
 ## Example
-
-
-```
-void main()
-{
-timer c;
-c.force_minutes(2000); // Forced the time to 2000 minutes. Thus, the timer will move to 2000 minutes.
-}
-
-```
+    
+    
+    void main()
+    {
+    timer c;
+    c.force_minutes(2000); // Forced the time to 2000 minutes. Thus, the timer will move to 2000 minutes.
+    }
+    

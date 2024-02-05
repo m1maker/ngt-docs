@@ -4,7 +4,7 @@ custom_menu object
 
 # properties
 
-||| variable| description  
+variable| description  
 ---|---  
 wrap | bool parameter, which toggles the wrapping. when on, the menu will wrap back to first and last item as soon as the index ends.  
 sidescrolling | bool parameter, which toggles the sidescrolling. default is false. If the sidescrolling is enabled, you use left and right arrow keys to navigate. otherwise, the normal up and down arrows are used.  

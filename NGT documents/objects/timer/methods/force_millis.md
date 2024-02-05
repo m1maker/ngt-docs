@@ -11,7 +11,7 @@ This function forces the time by milliseconds.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 millis | The milliseconds to set the time.  
   
@@ -24,13 +24,11 @@ None
 This method forces the time to set to a specified number of milliseconds.
 
 ## Example
-
-
-```
-void main()
-{
-timer c;
-c.force_millis(2000); // Forced the time to 2000 milliseconds. Thus, the timer will move to 2000 milliseconds.
-}
-
-```
+    
+    
+    void main()
+    {
+    timer c;
+    c.force_millis(2000); // Forced the time to 2000 milliseconds. Thus, the timer will move to 2000 milliseconds.
+    }
+    

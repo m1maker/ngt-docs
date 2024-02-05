@@ -11,7 +11,7 @@ This method adds the slider to the menu.
 
 ## Parameters
 
-||| Variable| Description  
+Variable| Description  
 ---|---  
 i | The name of the slider.  
 ref | The reference of the slider to access.  

@@ -23,13 +23,11 @@ The text stored in the clipboard on success, or an empty string on failure.
 None
 
 ## Example
-
-
-```
-void main()
-{
-clipboard_copy_text("Hello");
-alert("Clipboard text", clipboard_read_text());
-}
-
-```
+    
+    
+    void main()
+    {
+    clipboard_copy_text("Hello");
+    alert("Clipboard text", clipboard_read_text());
+    }
+    

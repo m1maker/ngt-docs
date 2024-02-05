@@ -4,7 +4,7 @@ text_input object
 
 # properties
 
-||| variable| description  
+variable| description  
 ---|---  
 copyable | Toggle whether the input can or cannot be copied, which is true by default.  
 pasteable | Toggle whether the input can or cannot be pasted, which is true by default.  

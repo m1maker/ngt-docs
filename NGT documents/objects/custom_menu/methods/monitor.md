@@ -22,26 +22,24 @@ None
 This method must be called at regular intervals, as it performs various checks, mainly keyboard activity, to ensure the menu and the focused control work as expected.
 
 ## Example
-
-
-```
-// Make a simple menu.
-#include "custom_menu.ngt"
-custom_menu menu;
-void main()
-{
-menu.create("Example menu", true);
-menu.add("item", "i");
-while(true)
-{
-menu.monitor();
-update_game_window();
-if(menu.is_clicked("i"))
-{
-alert("result", menu.get_current_ref());
-quit();
-}
-}
-}
-
-```
+    
+    
+    // Make a simple menu.
+    #include "custom_menu.ngt"
+    custom_menu menu;
+    void main()
+    {
+    menu.create("Example menu", true);
+    menu.add("item", "i");
+    while(true)
+    {
+    menu.monitor();
+    update_game_window();
+    if(menu.is_clicked("i"))
+    {
+    alert("result", menu.get_current_ref());
+    quit();
+    }
+    }
+    }
+    

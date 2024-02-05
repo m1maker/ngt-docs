@@ -11,7 +11,7 @@ This method will load a sound into memory for playback.
 
 ## Parameters
 
-||| Parameter| Description  
+Parameter| Description  
 ---|---  
 filename | The file to open.  
 hrtf | Toggle whether the sound should use HRTF.  
@@ -27,17 +27,15 @@ A loaded sound is completely put into memory when it is first created, utilizing
 The engine optimizes memory usage by loading multiple instances of the same sound into memory only once, even when utilized by multiple objects. For example, having 50 enemies with two footsteps each won't load 100 independent sound objects into memory. 
 
 ## Example
-
-
-```
-// Load a sound into memory and play it.
-void main()
-{
-init_engine();
-sound test;
-test.load("c:\\windows\\media\\ding.wav", true);
-test.play_wait();
-test.close();
-}
-
-```
+    
+    
+    // Load a sound into memory and play it.
+    void main()
+    {
+    init_engine();
+    sound test;
+    test.load("c:\\windows\\media\\ding.wav", true);
+    test.play_wait();
+    test.close();
+    }
+    

@@ -12,7 +12,7 @@ This function copies text to the clipboard.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 text | The text that should be copied.  
   
@@ -25,12 +25,10 @@ true on success, false on failure.
 This function will copy the specified text to the Windows clipboard, overwriting whatever is already there.
 
 ## Example
-
-
-```
-void main()
-{
-clipboard_copy_text("Hello");
-}
-
-```
+    
+    
+    void main()
+    {
+    clipboard_copy_text("Hello");
+    }
+    

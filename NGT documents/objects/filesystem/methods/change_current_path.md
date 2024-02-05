@@ -11,7 +11,7 @@ This function sets the current path.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 path | The new path to set as the current path.  
   
@@ -24,13 +24,11 @@ true on success, false on failure.
 Both slash (/) and backslash (\\) can be used for the path.
 
 ## Example
-
-
-```
-void main()
-{
-filesystem f;
-f.change_current_path("D:\\NGT");
-}
-
-```
+    
+    
+    void main()
+    {
+    filesystem f;
+    f.change_current_path("D:\\NGT");
+    }
+    

@@ -11,7 +11,7 @@ This adds the list to the menu.
 
 ## Parameters
 
-||| Variable| Description  
+Variable| Description  
 ---|---  
 i | The specified item.  
 ref | The reference name for the item.  

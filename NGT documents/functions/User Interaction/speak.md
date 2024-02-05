@@ -12,7 +12,7 @@ This function speaks some text using a screen reader which is determined automat
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 text | The text that is to be spoken.  
 stop | Toggle whether the previously speaking speech should be stopped. (Default: true)  
@@ -26,13 +26,11 @@ None
 This function speaks some text using a screen reader which is determined automatically.
 
 ## Example
-
-
-```
-void main()
-{
-init_engine();
-speak("I am a screen reader");
-}
-
-```
+    
+    
+    void main()
+    {
+    init_engine();
+    speak("I am a screen reader");
+    }
+    

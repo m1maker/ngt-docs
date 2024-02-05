@@ -11,7 +11,7 @@ This method checks whether the timer is currently running.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 none | No parameters for this method.  
   
@@ -24,20 +24,18 @@ true if the timer is currently running, or false if the timer is paused.
 None
 
 ## Example
-
-
-```
-void main()
-{
-timer c;
-if(c.is_running())
-{
-alert("yes", "The timer is nicely running!");
-}
-else
-{
-alert("error", "The timer is not running. This could mean either the timer is paused.");
-}
-}
-
-```
+    
+    
+    void main()
+    {
+    timer c;
+    if(c.is_running())
+    {
+    alert("yes", "The timer is nicely running!");
+    }
+    else
+    {
+    alert("error", "The timer is not running. This could mean either the timer is paused.");
+    }
+    }
+    

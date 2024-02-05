@@ -12,7 +12,7 @@ This method sorts the items in an array in descending order.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 start_index | The index to begin sorting from.  
 count | The number of elements to sort.  
@@ -30,21 +30,19 @@ The start_index parameter is 0-based.
 Please note: To sort an array of classes, it is necessary for the class to overload the comparison operator.
 
 ## Example
-
-
-```
-// Declare an array, sort its values and display them. We will use the extended declaration to show how to manually sort the array.
-
-void main()
-{
-string[] names(2);
-names[0] = "harry";
-names[1] = "ngt";
-names.sort_desc(0, names.length());
-for (int counter = 0; counter < names.length(); counter++)
-{
-alert("Names", "Element " + counter + " contains the name " + names[counter] + ".");
-}
-}
-
-```
+    
+    
+    // Declare an array, sort its values and display them. We will use the extended declaration to show how to manually sort the array.
+    
+    void main()
+    {
+    string[] names(2);
+    names[0] = "harry";
+    names[1] = "ngt";
+    names.sort_desc(0, names.length());
+    for (int counter = 0; counter < names.length(); counter++)
+    {
+    alert("Names", "Element " + counter + " contains the name " + names[counter] + ".");
+    }
+    }
+    

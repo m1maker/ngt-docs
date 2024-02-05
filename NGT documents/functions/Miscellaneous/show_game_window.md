@@ -13,7 +13,7 @@ This function displays the main window of your game on the user's screen.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 title | The title of the window.  
 width | the width of the window.  
@@ -34,19 +34,17 @@ Until this function is called your game window will be invisible, thus not allow
 It is never legal to call this function more than once during the course of your game's execution, doing so may result more than 1 windows appearrence.
 
 ## Example
-
-
-```
-// Display the window and wait for the user to close it.
-
-void main()
-{
-show_game_window("ngt test window",400,600);
-while(true)
-{
-delay(5);
-update_game_window();
-}
-}
-
-```
+    
+    
+    // Display the window and wait for the user to close it.
+    
+    void main()
+    {
+    show_game_window("ngt test window",400,600);
+    while(true)
+    {
+    delay(5);
+    update_game_window();
+    }
+    }
+    

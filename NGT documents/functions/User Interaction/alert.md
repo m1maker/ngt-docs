@@ -12,7 +12,7 @@ This function displays a message box on the user's screen with a title and text.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 title | The title of the window.  
 text | The text that is to be shown.  
@@ -27,12 +27,10 @@ true on success, false on failure.
 This function is useful for displaying information to the user such as error messages and other important alerts. The script execution will pause until the user clicks on the OK button.
 
 ## Example
-
-
-```
-void main()
-{
-alert("Information", "This is an alert box");
-}
-
-```
+    
+    
+    void main()
+    {
+    alert("Information", "This is an alert box");
+    }
+    

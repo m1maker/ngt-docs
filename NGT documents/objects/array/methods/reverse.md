@@ -23,22 +23,20 @@ None.
 None.
 
 ## Example
-
-
-```
-// Declare an array and reverse the order, displaying the results.
-
-void main()
-{
-string[] names(3);
-names[0] = "a";
-names[1] = "b";
-names[2] = "c";
-names.reverse();
-for (int counter = 0; counter < names.length(); counter++)
-{
-alert("Names", "Element " + counter + " contains the name " + names[counter] + ".");
-}
-}
-
-```
+    
+    
+    // Declare an array and reverse the order, displaying the results.
+    
+    void main()
+    {
+    string[] names(3);
+    names[0] = "a";
+    names[1] = "b";
+    names[2] = "c";
+    names.reverse();
+    for (int counter = 0; counter < names.length(); counter++)
+    {
+    alert("Names", "Element " + counter + " contains the name " + names[counter] + ".");
+    }
+    }
+    

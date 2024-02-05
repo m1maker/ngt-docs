@@ -50,15 +50,13 @@ One of the initial steps in programming is to display text on the screen. Consid
 
   
 
-
-
-```
-void main()
-{
-alert("hello","hello, world!");
-}
-
-```
+    
+    
+    void main()
+    {
+    alert("hello","hello, world!");
+    }
+    
 
   
 
@@ -144,13 +142,11 @@ Here's an example:
 
   
 
-
-
-```
-int playerScore;
-float fishPrice;
-
-```
+    
+    
+    int playerScore;
+    float fishPrice;
+    
 
   
 
@@ -165,14 +161,12 @@ example:
 
   
 
-
-
-```
-int a = 2;
-int b = 5;
-int c = a + b;
-
-```
+    
+    
+    int a = 2;
+    int b = 5;
+    int c = a + b;
+    
 
   
 
@@ -191,14 +185,12 @@ example:
 
   
 
-
-
-```
-float x = 3.5;
-float y = 1.25;
-float z = x * y;
-
-```
+    
+    
+    float x = 3.5;
+    float y = 1.25;
+    float z = x * y;
+    
 
   
 
@@ -233,13 +225,11 @@ example:
 
   
 
-
-
-```
-string name = "Harry";
-alert("My name is", name);
-
-```
+    
+    
+    string name = "Harry";
+    alert("My name is", name);
+    
 
   
 
@@ -253,14 +243,12 @@ Now, let's get a bit fancier:
 
   
 
-
-
-```
-string name = "Harry";
-string message = "My name is " + name + ". Remember it!";
-alert("Remember me", message);
-
-```
+    
+    
+    string name = "Harry";
+    string message = "My name is " + name + ". Remember it!";
+    alert("Remember me", message);
+    
 
   
 
@@ -274,15 +262,13 @@ Strings aren't just for text; they're versatile enough to handle numbers too:
 
   
 
-
-
-```
-string name = "Harry";
-int age = random(10, 50);
-string info = "I'm " + name + " and I'm " + age + " years old.";
-alert("Important info", info);
-
-```
+    
+    
+    string name = "Harry";
+    int age = random(10, 50);
+    string info = "I'm " + name + " and I'm " + age + " years old.";
+    alert("Important info", info);
+    
 
   
 
@@ -296,13 +282,11 @@ Strings also offer ways to handle special characters like new lines or tabs:
 
   
 
-
-
-```
-string multiline = "This is a\r\nmultiline\r\nstring.";
-string directory = "The directory is \"c:\\path\\to\\folder\".";
-
-```
+    
+    
+    string multiline = "This is a\r\nmultiline\r\nstring.";
+    string directory = "The directory is \"c:\\path\\to\\folder\".";
+    
 
   
 
@@ -332,14 +316,12 @@ Consider the following example:
 
   
 
-
-
-```
-const string audio_ext = ".ogg";
-sound beep;
-beep.load("sounds/beep" + audio_ext);
-
-```
+    
+    
+    const string audio_ext = ".ogg";
+    sound beep;
+    beep.load("sounds/beep" + audio_ext);
+    
 
   
 
@@ -353,22 +335,20 @@ Another type of constant is an enum, short for enumeration, capable of holding o
 
   
 
-
-
-```
-enum direction
-{
-left = -1,
-right = 1
-}
-
-enum players
-{
-jon,
-alex
-}
-
-```
+    
+    
+    enum direction
+    {
+    left = -1,
+    right = 1
+    }
+    
+    enum players
+    {
+    jon,
+    alex
+    }
+    
 
   
 
@@ -388,16 +368,14 @@ To use a function, you need to declare it first. The declaration includes the fu
 
   
 
-
-
-```
-void greet()
-{
-// Code for the greeting function
-alert("Hello!");
-}
-
-```
+    
+    
+    void greet()
+    {
+    // Code for the greeting function
+    alert("Hello!");
+    }
+    
 
   
 
@@ -408,16 +386,14 @@ To call or use a function, you simply write its name followed by parentheses. If
 
   
 
-
-
-```
-// Calling the greet function
-void main()
-{
-greet();
-}
-
-```
+    
+    
+    // Calling the greet function
+    void main()
+    {
+    greet();
+    }
+    
 
   
 
@@ -426,18 +402,16 @@ If a function expects parameters, you need to provide them inside the parenthese
 
   
 
-
-
-```
-int add(int a, int b)
-{
-return a+b;
-}
-
-int result = add(3, 5);
-// Now, 'result' will hold the value 8
-
-```
+    
+    
+    int add(int a, int b)
+    {
+    return a+b;
+    }
+    
+    int result = add(3, 5);
+    // Now, 'result' will hold the value 8
+    
 
   
 
@@ -456,25 +430,23 @@ The `if` statement evaluates a condition and executes a block of code if that co
 
   
 
-
-
-```
-int x = 10;
-
-if (x > 5)
-{
-alert("x is greater than 5");
-}
-else if (x == 5)
-{
-alert("x is equal to 5");
-}
-else
-{
-alert("x is less than 5");
-}
-
-```
+    
+    
+    int x = 10;
+    
+    if (x > 5)
+    {
+    alert("x is greater than 5");
+    }
+    else if (x == 5)
+    {
+    alert("x is equal to 5");
+    }
+    else
+    {
+    alert("x is less than 5");
+    }
+    
 
   
 
@@ -502,29 +474,27 @@ Let's explore an example:
 
   
 
-
-
-```
-int playerScore;
-double bonusPoints;
-
-switch(playerScore)
-{
-case 1000:
-bonusPoints = 200.5;
-break;
-case 750:
-bonusPoints = 150.75;
-break;
-case 500:
-bonusPoints = 100.25;
-break;
-case 250:
-bonusPoints = 50.1;
-break;
-}
-
-```
+    
+    
+    int playerScore;
+    double bonusPoints;
+    
+    switch(playerScore)
+    {
+    case 1000:
+    bonusPoints = 200.5;
+    break;
+    case 750:
+    bonusPoints = 150.75;
+    break;
+    case 500:
+    bonusPoints = 100.25;
+    break;
+    case 250:
+    bonusPoints = 50.1;
+    break;
+    }
+    
 
   
 
@@ -540,23 +510,21 @@ Another keyword, default, handles conditions not met by the case statement. For 
 
   
 
-
-
-```
-switch(playerScore)
-{
-case 1000:
-bonusPoints = 200.5;
-break;
-case 750:
-bonusPoints = 150.75;
-break;
-// Additional cases go here
-default:
-bonusPoints -= 5.0;
-}
-
-```
+    
+    
+    switch(playerScore)
+    {
+    case 1000:
+    bonusPoints = 200.5;
+    break;
+    case 750:
+    bonusPoints = 150.75;
+    break;
+    // Additional cases go here
+    default:
+    bonusPoints -= 5.0;
+    }
+    
 
   
 
@@ -569,15 +537,13 @@ The switch condition accepts any expression yielding a numeric value. For instan
 
   
 
-
-
-```
-switch(number % 50)
-{
-// Cases based on remainders go here
-}
-
-```
+    
+    
+    switch(number % 50)
+    {
+    // Cases based on remainders go here
+    }
+    
 
   
 
@@ -595,98 +561,86 @@ After experimenting with if statements, it's time to delve into the concept of l
 ### 7.1. While Loops
 
 Take a look at the following code example:
-
-
-```
-while (key_pressed(SDLK_ESCAPE)==false)
-{
-update_game_window();
-}
-
-```
+    
+    
+    while (key_pressed(SDLK_ESCAPE)==false)
+    {
+    update_game_window();
+    }
+    
 
 The loop runs as long as the escape key is not pressed. The code inside the loop is executed repeatedly.
 
 If you want to perform a task a specific number of times, you can use a while loop. Here's an example that runs a code block 1000 times:
-
-
-```
-int x=0;
-while(x<1000)
-{
-// Put your code here.
-x++;
-}
-
-```
+    
+    
+    int x=0;
+    while(x<1000)
+    {
+    // Put your code here.
+    x++;
+    }
+    
 
 ### 7.2. Do While Loops
 
 Do while loops are similar but ensure that the code block is executed at least once. Here's an example:
-
-
-```
-do
-{
-update_game_window();
-}
-while(!key_pressed(SDLK_ESCAPE));
-
-```
+    
+    
+    do
+    {
+    update_game_window();
+    }
+    while(!key_pressed(SDLK_ESCAPE));
+    
 
 Unlike while loops, the condition is checked at the end of the loop. The exclamation mark before the condition indicates the loop should repeat as long as the condition is false.
 
 ### 7.3. For Loops
 
 For loops are powerful and mainly used for counting. They combine loop control elements into one statement. Here's an example:
-
-
-```
-for(int x=0; x<=10; x++)
-{
-//loop code goes here.
-}
-
-```
+    
+    
+    for(int x=0; x<=10; x++)
+    {
+    //loop code goes here.
+    }
+    
 
 The for statement includes initialization, loop continuation condition, and reassignment in a single line.
 
 Here's another example with a different reassignment expression:
-
-
-```
-for(x=1; x<1000; x*=2)
-{
-//code goes here
-}
-
-```
+    
+    
+    for(x=1; x<1000; x*=2)
+    {
+    //code goes here
+    }
+    
 
 ### 7.4. Break and Continue
 
 There are scenarios where you might want to break out of a loop for various reasons. The following example shows the use of break and continue:
-
-
-```
-while(true)
-{
-if(something==true)
-{
-break;
-}
-if(something_else==true)
-{
-break;
-}
-if(yet_another_variable==true)
-{
-continue;
-}
-// more code here...
-update_game_window();
-}
-
-```
+    
+    
+    while(true)
+    {
+    if(something==true)
+    {
+    break;
+    }
+    if(something_else==true)
+    {
+    break;
+    }
+    if(yet_another_variable==true)
+    {
+    continue;
+    }
+    // more code here...
+    update_game_window();
+    }
+    
 
 The loop has no specific condition (while(true)), creating an endless loop. The break statement terminates the loop based on certain conditions, and the continue statement skips the rest of the cycle and moves to the next iteration.
 
@@ -704,10 +658,9 @@ To begin, create several scripts. For example, consider two scripts: `game.ngt` 
 Note: Only the main script (`game.ngt`) should contain the `void main()` function. Duplication of this function in other scripts could lead to engine failure.
 
 Using multiple scripts involves importing functionalities from one script to another using the `#include "scriptname"` or `#include "path/to/scriptname"` directives. For instance, to import the `dlg` script into your `game` script:
-
-
-```#include "dlg.ngt"
-```
+    
+    
+    #include "dlg.ngt"
 
 After importing, you can utilize functions from the imported script within your main script. However, take caution to avoid conflicts. Do not create identical functions in multiple scripts. If a function exists in an imported script and is replicated in another, the engine will encounter conflicts and potentially fail.
 

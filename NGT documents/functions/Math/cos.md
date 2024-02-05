@@ -11,7 +11,7 @@ This function returns the cosine of an angle of x radians.
 
 ## Parameters
 
-||| Variable| Description  
+Variable| Description  
 ---|---  
 x | A value representing an angle expressed in radians that will be calculated.  
   
@@ -24,14 +24,12 @@ The cosine of x.
 None.
 
 ## Example
-
-
-```
-void main()
-{
-double param = 60.0;
-double result = cos(param * 3.14159 / 180);
-alert("cos test", "The cos of " + param + " is " + result + ".");
-}
-
-```
+    
+    
+    void main()
+    {
+    double param = 60.0;
+    double result = cos(param * 3.14159 / 180);
+    alert("cos test", "The cos of " + param + " is " + result + ".");
+    }
+    

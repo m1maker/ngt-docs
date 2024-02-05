@@ -11,7 +11,7 @@ This adds the list item to the given reference.
 
 ## Parameters
 
-||| Variable| Description  
+Variable| Description  
 ---|---  
 ref | The reference name of the list.  
 item | the specify list item to be added.  

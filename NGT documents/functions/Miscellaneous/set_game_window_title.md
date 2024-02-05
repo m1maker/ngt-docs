@@ -12,7 +12,7 @@ This function changes the title of the window.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 new_title | The new title that should be changed.  
   
@@ -25,17 +25,15 @@ None
 This function changes the title of the current window, overwriting whatever the window title is.
 
 ## Example
-
-
-```
-// Show a window, wait for three seconds, then another window, then wait three seconds, then quit.
-void main()
-{
-show_game_window("first window");
-wait(3000);
-set_game_window_title("second window");
-wait(3000);
-quit();
-}
-
-```
+    
+    
+    // Show a window, wait for three seconds, then another window, then wait three seconds, then quit.
+    void main()
+    {
+    show_game_window("first window");
+    wait(3000);
+    set_game_window_title("second window");
+    wait(3000);
+    quit();
+    }
+    

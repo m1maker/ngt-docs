@@ -11,7 +11,7 @@ The setDate method is used within the datetime object, and sets the current year
 
 ## Parameters
 
-||| Variable| Description  
+Variable| Description  
 ---|---  
 year | The year to set.  
 month | The month to set.  
@@ -26,14 +26,12 @@ true on success, false on failure.
 This method sets the current date.
 
 ## Example
-
-
-```
-datetime d;
-void main()
-{
-d.setDate(2023, 12, 1);
-alert("hello", d.get_day() + ", " + d.get_month() + ", " + d.get_day() + ", " + d.get_hour() + ", " + d.get_minute() + ", and " + d.get_second());
-}
-
-```
+    
+    
+    datetime d;
+    void main()
+    {
+    d.setDate(2023, 12, 1);
+    alert("hello", d.get_day() + ", " + d.get_month() + ", " + d.get_day() + ", " + d.get_hour() + ", " + d.get_minute() + ", and " + d.get_second());
+    }
+    

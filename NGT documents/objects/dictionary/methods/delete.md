@@ -12,7 +12,7 @@ This method will attempt to delete a particular key and value pair.
 
 ## Parameters:
 
-||| variable| description  
+variable| description  
 ---|---  
 key | The key to look for.  
   
@@ -25,17 +25,15 @@ true on success, false on failure.
 None.
 
 ## Example:
-
-
-```
-dictionary game_board; // Declare our dictionary.
-
-void main()
-{
-// Set our values.
-game_board.set("1", 2);
-game_board.set("2", 4);
-game_board.delete("1");
-}
-
-```
+    
+    
+    dictionary game_board; // Declare our dictionary.
+    
+    void main()
+    {
+    // Set our values.
+    game_board.set("1", 2);
+    game_board.set("2", 4);
+    game_board.delete("1");
+    }
+    

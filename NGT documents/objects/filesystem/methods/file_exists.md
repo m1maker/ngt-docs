@@ -11,7 +11,7 @@ This function checks whether a given file is exist.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 name | The name to check.  
   

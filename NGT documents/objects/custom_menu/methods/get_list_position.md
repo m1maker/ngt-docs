@@ -11,7 +11,7 @@ This method returns the position of a given list.
 
 ## Parameters
 
-||| Variable| Description  
+Variable| Description  
 ---|---  
 ref | The reference of the menu item to the list.  
   

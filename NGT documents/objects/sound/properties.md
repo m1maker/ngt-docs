@@ -4,7 +4,7 @@ sound object
 
 # properties
 
-||| variable| description  
+variable| description  
 ---|---  
 pan | The pan of the sound, between -100 and 100. This property can be used to get or set.  
 pitch | The pitch of the sound. This property can be used to get or set.  

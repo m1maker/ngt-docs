@@ -11,7 +11,7 @@ The instance object is used to check whether a given program is already running.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 application_name | An optional unique name that is used internally for the program.  
   
@@ -24,22 +24,20 @@ If the application_name argument is specified, it should not be more than 100 ch
 This class does not have many functions, as this is simple.
 
 ## Example
-
-
-```
-/*
-Write a script that checks for another instance of itself. To make this script work effectively you must run it at least twice within twenty seconds of the first instance being started.
-*/
-
-void main()
-{
-instance myapp("instancetester");
-if(myapp.is_running())
-{
-alert("Error", "This script is already running, hence, failed to execute!");
-quit();
-}
-wait(20000);
-}
-
-```
+    
+    
+    /*
+    Write a script that checks for another instance of itself. To make this script work effectively you must run it at least twice within twenty seconds of the first instance being started.
+    */
+    
+    void main()
+    {
+    instance myapp("instancetester");
+    if(myapp.is_running())
+    {
+    alert("Error", "This script is already running, hence, failed to execute!");
+    quit();
+    }
+    wait(20000);
+    }
+    

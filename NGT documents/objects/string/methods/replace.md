@@ -11,7 +11,7 @@ This method replaces a string with a given text and returns a new string.
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 from | The text that should be replaced.  
 to | The text to replace with.  
@@ -25,14 +25,12 @@ A string with the updated data.
 None.
 
 ## Example
-
-
-```
-void main()
-{
-string a = "hello dear!";
-string b = a.replace("hello", "welcome");
-alert("final", b); // Output should be "welcome dear!".
-}
-
-```
+    
+    
+    void main()
+    {
+    string a = "hello dear!";
+    string b = a.replace("hello", "welcome");
+    alert("final", b); // Output should be "welcome dear!".
+    }
+    

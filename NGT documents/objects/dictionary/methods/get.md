@@ -23,21 +23,19 @@ true on success, false on failure.
 The value parameter is declared with the &out keyword since it is a parameter that the function will write to, not read from. Make certain that the value that you stored in the dictionary has the same type as the variable into which you tell the function to write the value, as a mismatch here will cause the function to fail.
 
 ## Example
-
-
-```
-dictionary game_board; // Declare our dictionary.
-void main()
-{
-int value; // Declare a variable for retrieving values from the dictionary.
-// Set our values.
-game_board.set("1", 2); // Sets the value 2 to a key called 1.
-game_board.set("2", 4); // Sets the value 4 to a key called 2.
-game_board.get("1", value); // Retrieve value for 1.
-alert("Dictionary example", "current value=" + value);
-game_board.get("2", value); // Retrieve value for 2.
-alert("Dictionary example", "current value=" + value);
-game_board.delete_all(); // Delete all the values.
-}
-
-```
+    
+    
+    dictionary game_board; // Declare our dictionary.
+    void main()
+    {
+    int value; // Declare a variable for retrieving values from the dictionary.
+    // Set our values.
+    game_board.set("1", 2); // Sets the value 2 to a key called 1.
+    game_board.set("2", 4); // Sets the value 4 to a key called 2.
+    game_board.get("1", value); // Retrieve value for 1.
+    alert("Dictionary example", "current value=" + value);
+    game_board.get("2", value); // Retrieve value for 2.
+    alert("Dictionary example", "current value=" + value);
+    game_board.delete_all(); // Delete all the values.
+    }
+    
