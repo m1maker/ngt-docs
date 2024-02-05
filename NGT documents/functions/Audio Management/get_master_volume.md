@@ -25,14 +25,12 @@ The master volume works similar to the master fader on a mixing desk. It control
 Please note that these functions do not apply to the Windows volume control, only sounds that are played from within the game itself.
 
 ## Example
-
-
-```
-// Set the master volume to 0.35 and retrieve the new value.
-void main()
-{
-set_master_volume(0.35);
-alert("Sound master volume", "The sound master volume is " + get_master_volume() + ".");
-}
-
-```
+    
+    
+    // Set the master volume to 0.35 and retrieve the new value.
+    void main()
+    {
+    set_master_volume(0.35);
+    alert("Sound master volume", "The sound master volume is " + get_master_volume() + ".");
+    }
+    

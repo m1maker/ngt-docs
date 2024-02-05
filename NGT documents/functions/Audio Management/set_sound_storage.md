@@ -12,7 +12,7 @@ This function sets the location of the path in which the engine will look for so
 
 ## Parameters
 
-||| variable| description  
+variable| description  
 ---|---  
 path | The path to use. This can be either an absolute path or a relative path.  
   
@@ -29,13 +29,11 @@ If an empty string is passed to this function, the engine will not look for soun
 It is perfectly legal to call this function more than once in your game. Sounds that are already loaded will not be affected; any changes are only seen the next time you attempt to load a sound.
 
 ## Example
-
-
-```
-// Tell the engine to look for sound files in a folder called sounds.
-void main()
-{
-set_sound_storage("sounds");
-}
-
-```
+    
+    
+    // Tell the engine to look for sound files in a folder called sounds.
+    void main()
+    {
+    set_sound_storage("sounds");
+    }
+    
