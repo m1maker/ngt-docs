@@ -2,20 +2,20 @@
 
 set_master_volume
 
-  
 
 
-This function sets the master volume for the sound mixer.  
+
+This function sets the master volume for the sound mixer.
 
 
 # void set_master_volume(float volume)
 
 ## Parameters
 
-variable| description  
----|---  
-volume | The new value that is to be the master volume, between a maximum of 1 and a minimum of 0.  
-  
+variable| description
+---|---
+volume | The new value that is to be the master volume, between a maximum of 1 and a minimum of 0.
+
 ## Return value
 
 None.
@@ -27,12 +27,12 @@ The master volume works similar to the master fader on a mixing desk. It control
 Please note that these functions do not apply to the Windows volume control, only sounds that are played from within the game itself.
 
 ## Example
-    
-    
-    // Set the master volume to 0.2 and retrieve the new value.
-    void main()
-    {
-    set_master_volume(0.2);
-    alert("Sound master volume", "The sound master volume is " + get_master_volume() + ".");
-    }
-    
+
+```
+// Set the master volume to 0.2 and retrieve the new value.
+void main()
+{
+set_master_volume(0.2);
+alert("Sound master volume", "The sound master volume is " + get_master_volume() + ".");
+}
+```

@@ -2,7 +2,7 @@
 
 random
 
-  
+
 
 
 this function generates the random number from a given minimum and maximum range.
@@ -11,11 +11,11 @@ this function generates the random number from a given minimum and maximum range
 
 ## Parameters
 
-variable| description  
----|---  
-min | the minimum number  
-max | the maximum number  
-  
+variable| description
+---|---
+min | the minimum number
+max | the maximum number
+
 ## Return value
 
 the random number
@@ -25,12 +25,12 @@ the random number
 this function generates the random number from a given minimum and maximum range.
 
 ## Example
-    
-    
-    // Display the window and wait for the user to close it.
-    
-    void main()
-    {
-    alert("hello","generated "+random(1,1000));
-    }
-    
+
+
+// Display the window and wait for the user to close it.
+```
+void main()
+{
+alert("hello","generated "+random(1,1000));
+}
+```

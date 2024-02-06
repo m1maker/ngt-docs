@@ -2,7 +2,7 @@
 
 tan
 
-  
+
 
 
 This function returns the tangent of an angle of x radians.
@@ -11,10 +11,10 @@ This function returns the tangent of an angle of x radians.
 
 ## Parameters
 
-Variable| Description  
----|---  
-x | A value representing an angle expressed in radians that will be calculated.  
-  
+Variable| Description
+---|---
+x | A value representing an angle expressed in radians that will be calculated.
+
 ## Return Value
 
 The tangent of x.
@@ -24,12 +24,12 @@ The tangent of x.
 None.
 
 ## Example
-    
-    
-    void main()
-    {
-    double param = 45.0;
-    double result = tan(param * 3.14159 / 180);
-    alert("tan test", "The tan of " + param + " is " + result + ".");
-    }
-    
+
+```
+void main()
+{
+double param = 45.0;
+double result = tan(param * 3.14159 / 180);
+alert("tan test", "The tan of " + param + " is " + result + ".");
+}
+```

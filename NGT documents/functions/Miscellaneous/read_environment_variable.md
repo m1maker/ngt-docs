@@ -2,7 +2,7 @@
 
 read_environment_variable
 
-  
+
 
 
 This function reads the value of a user specific or system-wide environment variable.
@@ -11,10 +11,10 @@ This function reads the value of a user specific or system-wide environment vari
 
 ## Parameters
 
-variable| description  
----|---  
-name | The name of the environment variable to read.  
-  
+variable| description
+---|---
+name | The name of the environment variable to read.
+
 ## Return Value
 
 A string containing the retrieved value on success, or an empty string on failure.
@@ -26,17 +26,17 @@ Environment variables are pieces of information that are either related to the o
 The environment variable names are not case sensitive.
 
 ## Example
-    
-    
-    // Try to retrieve some information about the username.
-    void main()
-    {
-    string value = read_environment_variable("USERNAME");
-    if (value == "")
-    {
-    alert("Error", "An empty string is retrieved");
-    quit();
-    }
-    alert("Value", value);
-    }
-    
+
+```
+// Try to retrieve some information about the username.
+void main()
+{
+string value = read_environment_variable("USERNAME");
+if (value == "")
+{
+alert("Error", "An empty string is retrieved");
+quit();
+}
+alert("Value", value);
+}
+```

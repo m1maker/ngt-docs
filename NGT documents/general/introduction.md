@@ -6,16 +6,16 @@ Welcome to NGT (New Game Toolkit)! Born from the legacy of Blastbay Game Toolkit
 
 ## NGT Features:
 
-  * Powerful Engine: Drive your game development with a robust and potent engine at your fingertips.
-  * Free and Open Source: Embrace the freedom to create without constraints, thanks to NGT’s open-source nature.
-  * Easy to Code: Simplified coding structure empowers developers to bring their ideas to life effortlessly.
-  * User-Friendly: Intuitive interface and design cater to users of varying skill levels, fostering a welcoming environment for all.
-  * Support for Multiple Screen Readers: Accessibility is key, with robust support for various screen readers, ensuring inclusivity in gaming experiences.
-  * Immersive 3D Sounds: Enhance gaming experiences with spatially accurate and immersive 3D sound capabilities.
-  * Expanded File and Filesystem Abilities: Unlock more possibilities by harnessing enhanced file and filesystem capabilities for versatile game development.
-  * Comprehensive Documentation: Access fully-documented resources, facilitating ease of understanding and implementation.
-  * Reliability: Trust in NGT's stability and consistency, ensuring a reliable platform for game creation.
-  * Diverse Abilities: Explore a plethora of additional abilities, opening doors to endless creative possibilities in game design.
+* Powerful Engine: Drive your game development with a robust and potent engine at your fingertips.
+* Free and Open Source: Embrace the freedom to create without constraints, thanks to NGT’s open-source nature.
+* Easy to Code: Simplified coding structure empowers developers to bring their ideas to life effortlessly.
+* User-Friendly: Intuitive interface and design cater to users of varying skill levels, fostering a welcoming environment for all.
+* Support for Multiple Screen Readers: Accessibility is key, with robust support for various screen readers, ensuring inclusivity in gaming experiences.
+* Immersive 3D Sounds: Enhance gaming experiences with spatially accurate and immersive 3D sound capabilities.
+* Expanded File and Filesystem Abilities: Unlock more possibilities by harnessing enhanced file and filesystem capabilities for versatile game development.
+* Comprehensive Documentation: Access fully-documented resources, facilitating ease of understanding and implementation.
+* Reliability: Trust in NGT's stability and consistency, ensuring a reliable platform for game creation.
+* Diverse Abilities: Explore a plethora of additional abilities, opening doors to endless creative possibilities in game design.
 
 
 
