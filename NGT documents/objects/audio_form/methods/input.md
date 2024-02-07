@@ -2,54 +2,41 @@
 
 audio_form object
 
-  
 
 
-this object allows you to get the same virtual controls as the windows, with multiple advance controls.
 
-# audio_form()
+this function returns the string with the asked input. you don't need to be declared, as it uses the already declared object named `form`. note, this is not function in `form` object inside.
+
+# string input(string title,string text,string dt,string pm,int ml,bool r,bool m,string button1, string button2,bool button1auto,bool button2auto)
 
 ## parameters
-
-none
+variable | description
+---|---
+title | the title of the `form`.
+text | the text of the `input field`.
+dt | the default text that should be inserted. leave it `empty` If you don't want to insert any.
+pm | an optional parameter to set the `password mask`, such as `bullet`, `hidden`, `star` and so on.
+ml | the maximum length that the text can be typed. default is `0`, meaning unlimited.
+r | an optional bool parameter to toggle the `read only` mode. default is `false`.
+m | an optional parameter to toggle the use of `multiline`. default is `false`.
+button1 | the text for the `ok` button. default is `ok`.
+button2 | the text for the `cancel` button. default is `&cancel`, meaning the cancel button can be activated by pressing alt+c key.
+button1auto | toggle whether the `ok` button has the ability to be activated automatically If the shortcut key was pressed (If any). default is `false`.
+button2auto | toggle whether the `cancel` button has the ability to be activated automatically If the shortcut key was pressed (If any). default is `false`.
 
 ## return value
 
-none
+a string with the input data.
 
 ## remarks
 
-this is the same to the windows virtual controls. this contains such as, lists, sliders, inputs, and buttons.
-
-it can be useful to display your options, with checkbox, list, slider, and input and more.
-
-an audio form object can hold up to 300 controls by default.
+this function returns the string with the asked input. you don't need to be declared, as it uses the already declared object named `form`
 
 ## example
-    
-    
-    // note. you can use form as default, since the object global is declared as form If you don't want to declare yourself.
-    #include"form.ngt"
-    void main()
-    {
-    form.create_window("test form");
-    int a=form.create_button("&ok;",true,false);
-    int b=form.create_button("&cancel;",false,true);
-    while(true)
-    {
-    delay(5);
-    update_game_window();
-    form.monitor();
-    if(form.is_pressed(a))
-    {
-    alert("ok","you pressed ok");
-    quit();
-    }
-    else if(form.is_pressed(b))
-    {
-    alert("final","you pressed cancel, or escape is detected");
-    quit();
-    }
-    }
-    }
-    
+```
+#include"form.ngt"
+void main()
+{
+alert("ok",input("name","type your name, maximum 30","","",30,false,false)); //also multiline is off.
+}
+```

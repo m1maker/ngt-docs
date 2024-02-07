@@ -11,5 +11,5 @@ sidescrolling | bool parameter, which toggles the sidescrolling. default is fals
 clicksound | the sound to play once clicked.  
 edgesound | the sound to play once the menu reaches to the edge.  
 wrapsound | the sound to play once the menu is wrapped.  
-opensound | the sound to play once the menu is displaied, or another word, If the menu is shown.  
+opensound | the sound to play once the menu is displaied, or another word, When the menu is shown.  
 movesound | the sound to play once the menu item is navigated.

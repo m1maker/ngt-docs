@@ -2,7 +2,7 @@
 
 # NGT: Your Gateway to Innovative Game Development
 
-Welcome to NGT (New Game Toolkit)! Born from the legacy of Blastbay Game Toolkit (BGT), NGT revolutionizes game development. Built on C++, it blends power with flexibility, enabling high-performance game creation. Embracing open source, NGT fosters collaboration, easing the transition for BGT users. Unleash limitless creativity within a thriving developer community. Join NGT and redefine the possibilities of game design.
+Welcome to NGT (New Game Toolkit)! Built on C++, it blends power with flexibility, enabling high-performance game creation. Embracing open source, NGT fosters collaboration. Unleash limitless creativity within a thriving developer community. Join NGT and redefine the possibilities of game design.
 
 ## NGT Features:
 
@@ -33,7 +33,7 @@ The beauty lies in the concise nature of these instructions. Using a combination
 
 ## Starting Your NGT Journey
 
-With all the necessary tools in hand, your initial step involves immersing yourself in the documentation files. Begin by exploring the comprehensive resources provided. Dive into the depths of NGT's documentation to grasp the foundational knowledge required.
+With all the necessary tools in hand, your initial step involves immersing yourself in the documentation files. Begin by exploring getting started tutorial, and other comprehensive resources provided. Dive into the depths of NGT's documentation to grasp the foundational knowledge required.
 
 As you familiarize yourself with the documentation, venture into creating test programs. Use these experiments as a practical means to solidify your understanding of the concepts outlined in the documentation. Take it step by step, absorbing each section thoroughly.
 
