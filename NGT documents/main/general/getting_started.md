@@ -47,11 +47,12 @@ For a longer comment, use `/*` (forward slash followed by an asterisk) to begin 
 ## 3\. printing text
 
 One of the initial steps in programming is to display text on the screen. Consider the following example:
-first create the file test.ngt.
+
+first create the file test.ngt. then, you can start testing with codes.
 
 
 
-```ngt:test.ngt
+```{ngt} test.ngt
 void main()
 {
 alert("hello","hello, world!");
@@ -403,13 +404,15 @@ If a function expects parameters, you need to provide them inside the parenthese
 
 
 
-```
+```{NGT} test.ngt
 int add(int a, int b)
 {
 return a+b;
 }
-
+void main()
+{
 int result = add(3, 5);
+}
 // Now, 'result' will hold the value 8
 ```
 
