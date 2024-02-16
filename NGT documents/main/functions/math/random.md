@@ -27,7 +27,7 @@ this function generates the random number from a given minimum and maximum range
 ## Example
 
 
-// Display the window and wait for the user to close it.
+// Display the window and wait for the user to close it by pressing ok button.
 ```
 void main()
 {

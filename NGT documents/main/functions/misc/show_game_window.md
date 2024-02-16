@@ -31,7 +31,7 @@ Until this function is called your game window will be invisible, thus not allow
 
 
 
-It is never legal to call this function more than once during the course of your game's execution, doing so may result more than 1 windows appearrence.
+It is never legal to call this function more than once during the course of your game's execution, doing so may result more than 1 windows appearrence. If you want to change the title of the window, use `set_game_window_title` method instead.
 
 ## Example
 
