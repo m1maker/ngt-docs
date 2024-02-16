@@ -47,11 +47,11 @@ For a longer comment, use `/*` (forward slash followed by an asterisk) to begin 
 ## 3\. printing text
 
 One of the initial steps in programming is to display text on the screen. Consider the following example:
+first create the file test.ngt.
 
 
 
-
-```
+```ngt:test.ngt
 void main()
 {
 alert("hello","hello, world!");
