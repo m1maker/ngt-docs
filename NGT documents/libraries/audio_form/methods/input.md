@@ -1,9 +1,5 @@
 # audio_form
 
-audio_form object
-
-
-
 
 this function returns the string with the asked input. you don't need to be declared, as it uses the already declared object named `form`. note, this is not function in `form` object inside.
 
@@ -12,17 +8,17 @@ this function returns the string with the asked input. you don't need to be decl
 ## parameters
 variable | description
 ---|---
-title | the title of the `form`.
-text | the text of the `input field`.
-dt | the default text that should be inserted. leave it `empty` If you don't want to insert any.
-pm | an optional parameter to set the `password mask`, such as `bullet`, `hidden`, `star` and so on.
-ml | the maximum length that the text can be typed. default is `0`, meaning unlimited.
-r | an optional bool parameter to toggle the `read only` mode. default is `false`.
-m | an optional parameter to toggle the use of `multiline`. default is `false`.
-button1 | the text for the `ok` button. default is `ok`.
-button2 | the text for the `cancel` button. default is `&cancel`, meaning the cancel button can be activated by pressing alt+c key.
-button1auto | toggle whether the `ok` button has the ability to be activated automatically If the shortcut key was pressed (If any). default is `false`.
-button2auto | toggle whether the `cancel` button has the ability to be activated automatically If the shortcut key was pressed (If any). default is `false`.
+title | the title of the form.
+text | the text of the input field.
+dt | the default text that should be inserted. leave it empty If you don't want to insert any.
+pm | an optional parameter to set the password mask, such as bullet, hidden, star and so on.
+ml | the maximum length that the text can be typed. default is 0, meaning unlimited.
+r | an optional bool parameter to toggle the read only mode. default is false.
+m | an optional parameter to toggle the use of multiline. default is false.
+button1 | the text for the ok button. default is ok.
+button2 | the text for the cancel button. default is &cancel, meaning the cancel button can be activated by pressing alt+c key.
+button1auto | toggle whether the ok button has the ability to be activated automatically If the shortcut key was pressed (If any). default is false.
+button2auto | toggle whether the cancel button has the ability to be activated automatically If the shortcut key was pressed (If any). default is false.
 
 ## return value
 

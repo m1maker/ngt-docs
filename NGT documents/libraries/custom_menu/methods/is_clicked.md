@@ -2,8 +2,6 @@
 
 custom_menu object
 
-  
-
 
 this method checks whether a given reference is clicked
 
@@ -11,10 +9,10 @@ this method checks whether a given reference is clicked
 
 ## Parameters
 
-Variable| Description  
----|---  
-ref | The name of the reference that you want to check.  
-  
+Variable| Description
+---|---
+ref | The name of the reference that you want to check.
+
 ## Return Value
 
 True on success, false on failure.
@@ -24,28 +22,28 @@ True on success, false on failure.
 This function is useful to check whether the given reference is clicked.
 
 ## Example
-    
-    
-    // Make a simple menu.
-    #include "custom_menu.ngt"
-    
-    custom_menu menu;
-    
-    void main()
-    {
-    menu.create("Example menu", true);
-    menu.add_clickbox("item", "i", true);
-    while(true)
-    {
-    menu.monitor();
-    update_game_window();
-    bool success = menu.is_clicked("i");
-    if (success)
-    {
-    // Item is clicked.
-    }
-    quit();
-    }
-    }
-    }
-    
+
+```
+// Make a simple menu.
+#include "custom_menu.ngt"
+
+custom_menu menu;
+
+void main()
+{
+menu.create("Example menu", true);
+menu.add_clickbox("item", "i", true);
+while(true)
+{
+menu.monitor();
+update_game_window();
+bool success = menu.is_clicked("i");
+if (success)
+{
+// Item is clicked.
+}
+exit();
+}
+}
+}
+```

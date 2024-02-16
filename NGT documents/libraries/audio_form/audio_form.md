@@ -13,10 +13,6 @@ this object allows you to get the same virtual controls as the windows, with mul
 
 none
 
-## return value
-
-none
-
 ## remarks
 
 this is the same to the windows virtual controls. this contains such as, lists, sliders, inputs, and buttons.
@@ -43,7 +39,7 @@ form.monitor();
 if(form.is_pressed(a))
 {
 alert("ok","you pressed ok");
-quit();
+exit();
 }
 else if(form.is_pressed(b))
 {

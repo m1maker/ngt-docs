@@ -2,8 +2,6 @@
 
 filesystem object
 
-  
-
 
 This function checks whether a given directory is exist.
 
@@ -11,10 +9,10 @@ This function checks whether a given directory is exist.
 
 ## Parameters
 
-variable| description  
----|---  
-name | The name to check.  
-  
+variable| description
+---|---
+name | The name to check.
+
 ## Return Value
 
 true on success, false on failure.

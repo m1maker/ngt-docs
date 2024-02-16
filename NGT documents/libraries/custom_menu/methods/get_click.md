@@ -2,8 +2,6 @@
 
 custom_menu object
 
-  
-
 
 this method returns the click of any item
 
@@ -15,7 +13,7 @@ none
 
 ## return value
 
-none
+a string of the clicked reference item.
 
 ## remarks
 

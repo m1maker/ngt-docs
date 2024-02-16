@@ -2,9 +2,6 @@
 
 custom_menu object
 
-  
-
-
 This function can determine whether the menu is running.
 
 # bool is_running()

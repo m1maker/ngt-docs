@@ -2,8 +2,6 @@
 
 custom_menu object
 
-  
-
 
 This method returns an array with the list of selected list items in a given list.
 
@@ -11,10 +9,10 @@ This method returns an array with the list of selected list items in a given lis
 
 ## Parameters
 
-Variable| Description  
----|---  
-ref | The reference of the menu item to the list.  
-  
+Variable| Description
+---|---
+ref | The reference of the menu item to the list.
+
 ## Return Value
 
 An array with the list of selected items on success, an empty array otherwise.

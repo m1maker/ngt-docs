@@ -2,7 +2,7 @@
 
 custom_menu object
 
-  
+
 
 
 This method returns the item of a given list position.
@@ -11,11 +11,11 @@ This method returns the item of a given list position.
 
 ## Parameters
 
-Variable| Description  
----|---  
-ref | The reference of the menu item to the list.  
-per | the position to get the item  
-  
+Variable| Description
+---|---
+ref | The reference of the menu item to the list.
+per | the position to get the item
+
 ## Return Value
 
 a string with the item of the given list position on success, an empty string otherwise.

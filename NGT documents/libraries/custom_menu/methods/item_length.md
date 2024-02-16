@@ -2,8 +2,6 @@
 
 custom_menu object
 
-  
-
 
 This function returns the length of the menu items.
 

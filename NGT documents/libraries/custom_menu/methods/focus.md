@@ -2,8 +2,6 @@
 
 custom_menu object
 
-  
-
 
 this method sets the focus of the menu.
 
@@ -11,10 +9,10 @@ this method sets the focus of the menu.
 
 ## parameters
 
-variable| description  
----|---  
-ref / per | the reference name of the item, or the position.  
-  
+variable| description
+---|---
+ref / per | the reference name of the item, or the position.
+
 ## return value
 
 true on success, false on failure.

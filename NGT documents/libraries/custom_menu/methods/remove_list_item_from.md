@@ -2,8 +2,6 @@
 
 custom_menu object
 
-  
-
 
 This function removes the list item through its reference name.
 
@@ -11,11 +9,11 @@ This function removes the list item through its reference name.
 
 ## Parameters
 
-Variable| Description  
----|---  
-ref | The name of the reference that you want to remove the list item from.  
-per | the position of the list item to remove.  
-  
+Variable| Description
+---|---
+ref | The name of the reference that you want to remove the list item from.
+per | the position of the list item to remove.
+
 ## Return Value
 
 True on success, false on failure.
