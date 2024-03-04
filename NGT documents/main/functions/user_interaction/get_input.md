@@ -35,7 +35,7 @@ show_game_window("Typing test");
 while(true)
 {
 update_game_window();
-if(wait_time.elapsed() >= 8000)
+if(wait_time.elapsed_second() >= 8000)
 {
 wait_time.pause();
 alert("Thanks", "Thanks for waiting for me. You typed the following characters within 8 seconds: " + get_input() + ". Goodbye.");

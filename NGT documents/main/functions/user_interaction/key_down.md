@@ -36,7 +36,7 @@ while(true)
 update_game_window();
 if(key_down(SDLK_LALT) && key_pressed(SDLK_F4))
 {
-quit();
+exit();
 }
 // Other code goes here.
 }

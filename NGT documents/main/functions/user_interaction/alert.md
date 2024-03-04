@@ -32,5 +32,6 @@ This function is useful for displaying information to the user such as error mes
 void main()
 {
 alert("Information", "This is an alert box");
+alert("well done","the alert function has been finally executed","finish");
 }
 ```
