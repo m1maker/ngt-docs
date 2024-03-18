@@ -564,7 +564,12 @@ After experimenting with if statements, it's time to delve into the concept of l
 
 ## While Loops
 
-Take a look at the following code example:
+`while` loop, also here, is as natural language. for instance,
+
+`while the escape key is not pressed, continue the script execution.`
+
+
+Take a look at the following code example where we translate above english text to the codes:
 
 ```
 while (key_pressed(SDLK_ESCAPE)==false)
@@ -591,7 +596,11 @@ x++;
 
 ## Do While Loops
 
-Do while loops are similar but ensure that the code block is executed at least once. Here's an example:
+Do while loops are similar but ensure that the code block is executed at least once. for instance, in english.
+
+`continue the script execution while the escape is not pressed.`
+
+Here's an example translated to the codes:
 
 ```
 do
@@ -710,7 +719,7 @@ f.close();
 }
 ```
 
-now, we used the open method to specify the file name. however, we now used the `w` character as open mode instead of the `r` character that we previously used. the `r` character means write.
+now, we used the open method to specify the file name. however, we now used the `w` character as open mode instead of the `r` character that we previously used. the `w` character means write.
 
 next, we used the `write` method, specifying the contents that is to be written.
 
@@ -718,10 +727,10 @@ after executing the codes, move back to your disk window and you'll be able to s
 
 ### file object methods
 
-here are the list of methods of the file object. this could be out of date, so you should read the documentation on the file object.
+here are the list of methods of the file object.
 
-function | description return value
----|---
+function | description | return value
+---|---|---
 open | opens the file to be read or write. it requires the filename, and the open mode(`r` or `w`) | 0 on success, -1 otherwise.
 close | this function closes the file object. | 0 on success, -1 otherwise.
 read | this function reads the contents from the currently opened file. it requires the length of the contents to be read, and using `get_size` method to read all contents otherwise. | the content of the file on success, an empty string otherwise.
@@ -734,6 +743,23 @@ get_size | this function returns the size of the file. | the size of the current
 after having we learned the file object, lets explore the filesystem object!
 
 for the basics, the filesystem object can perform additional actions, such as checking the current path where the script is being executed, create / remove / copy / move directories and files.
+
+### filesystem object methods.
+
+function | description | return value
+---|---|---
+change_current_path | this method changes the current working directory, where the default is the directory that the script is being executed. | true on success, false on failure.
+dir_exists | this method checks whether the given directory is exist. true on success, false on failure.
+file_exists | this method checks whether the given file is exist. true on success, false on failure.
+get_create_date_time | returns the date that the file is created. | the datetime object with the date set on success, a runtime error Otherwise.
+get_current_path | returns the current path. | a string with the current working directory on success, an empty string Otherwise.
+get_dirs | lists all directories on the current set path. | an array with the list of directories on success, an empty array Otherwise.
+get_files | lists all files on the current set path. | an array with the list of files on success, an empty array Otherwise.
+get_modify_date_time | returns the date that the file is modifyed. | the datetime object with the date set on success, a runtime error Otherwise.
+is_dir | checks whether the given string is a directory. | true or false.
+is_file | checks whether the given string is a file. | true or false.
+make_dir | creates 1 or more directories. | 0 on success, -1 Otherwise.
+remove_dir | deletes the directory. | 0 on success and -1 otherwise.
 
 
 # Using Multiple Scripts
