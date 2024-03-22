@@ -6,22 +6,11 @@ These constants are meant to be used in conjunction with the key_down and key_pr
 
 
 * SDLK_UNKNOWN
-* SDLK_RETURN
-* SDLK_ESCAPE
 * SDLK_BACKSPACE
 * SDLK_TAB
+* SDLK_RETURN
+* SDLK_ESCAPE
 * SDLK_SPACE
-* SDLK_EXCLAIM
-* SDLK_QUOTEDBL
-* SDLK_HASH
-* SDLK_PERCENT
-* SDLK_DOLLAR
-* SDLK_AMPERSAND
-* SDLK_QUOTE
-* SDLK_LEFTPAREN
-* SDLK_RIGHTPAREN
-* SDLK_ASTERISK
-* SDLK_PLUS
 * SDLK_COMMA
 * SDLK_MINUS
 * SDLK_PERIOD
@@ -36,19 +25,7 @@ These constants are meant to be used in conjunction with the key_down and key_pr
 * SDLK_7
 * SDLK_8
 * SDLK_9
-* SDLK_COLON
 * SDLK_SEMICOLON
-* SDLK_LESS
-* SDLK_EQUALS
-* SDLK_GREATER
-* SDLK_QUESTION
-* SDLK_AT
-* SDLK_LEFTBRACKET
-* SDLK_BACKSLASH
-* SDLK_RIGHTBRACKET
-* SDLK_CARET
-* SDLK_UNDERSCORE
-* SDLK_BACKQUOTE
 * SDLK_a
 * SDLK_b
 * SDLK_c
@@ -75,6 +52,7 @@ These constants are meant to be used in conjunction with the key_down and key_pr
 * SDLK_x
 * SDLK_y
 * SDLK_z
+* SDLK_DELETE
 * SDLK_CAPSLOCK
 * SDLK_F1
 * SDLK_F2
@@ -94,7 +72,6 @@ These constants are meant to be used in conjunction with the key_down and key_pr
 * SDLK_INSERT
 * SDLK_HOME
 * SDLK_PAGEUP
-* SDLK_DELETE
 * SDLK_END
 * SDLK_PAGEDOWN
 * SDLK_RIGHT
@@ -241,11 +218,3 @@ These constants are meant to be used in conjunction with the key_down and key_pr
 * SDLK_KBDILLUMUP
 * SDLK_EJECT
 * SDLK_SLEEP
-* SDLK_APP1
-* SDLK_APP2
-* SDLK_AUDIOREWIND
-* SDLK_AUDIOFASTFORWARD
-* SDLK_SOFTLEFT
-* SDLK_SOFTRIGHT
-* SDLK_CALL
-* SDLK_ENDCALL
