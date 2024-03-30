@@ -3,6 +3,7 @@
 user_idle object
 
 # properties
+
 variable | description | type
 ---|---|---
 elapsed_millis | the elapsed as milliseconds | read only

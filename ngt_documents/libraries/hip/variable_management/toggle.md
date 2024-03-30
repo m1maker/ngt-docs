@@ -3,7 +3,9 @@
 this method will change the value of the value, respectively.
 
 # toggle(value)
+
 ## parameters
+
 variable | description
 ---|---
 value | the value you want to change, see remarks.
@@ -15,6 +17,7 @@ the value changed from the default value depending on the type, see remarks.
 ## remarks
 
 the following types are supported
+
 * int
 * bool
 

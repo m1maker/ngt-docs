@@ -762,6 +762,109 @@ make_dir | creates 1 or more directories. | 0 on success, -1 Otherwise.
 remove_dir | deletes the directory. | 0 on success and -1 otherwise.
 
 
+# arrays
+
+Up until now, we've delved into the fundamental aspects of variables, exploring their manipulation and usage within programming. However, a prevalent challenge arises as projects scale: the management of numerous variables, particularly noticeable in medium-sized games.
+
+Consider a game board comprising 30 squares. Players roll dice, advancing their position based on the outcome, and subsequently, we determine the effect of landing on each square. For this illustration, let's assume each square can be represented by three values: 1, 2, and 3. These values signify different actions; for instance, 1 might indicate moving back three squares, 2 allows the player to stay put, and 3 signifies progressing forward three squares.
+
+Now, let's embark on constructing a segment of this game board swiftly. We'll designate the first square as number 0 rather than 1, a decision that will soon become evident.
+
+
+```
+int board0 = 2;
+int board1 = 2;
+int board2 = 2;
+int board3 = 2;
+int board4 = 1;
+int board5 = 2;
+int board6 = 2;
+int board7 = 2;
+int board8 = 2;
+int board9 = 3;
+int board10 = 2;
+```
+
+Let's pause here, as the prospect of printing out this tutorial might elicit frustration due to its sheer length. Upon examining this example, one can readily acknowledge the repetitive and cumbersome nature of the code, wouldn't you agree?
+
+Consider a scenario where this represents a side-scrolling game, with each number symbolizing different terrains like ground, fire, or water. If the level were expansive, boasting 500 squares, envision the laborious task of drafting 500 lines akin to the above. It's impractical. Not only is composing the grid laborious, but managing the corresponding if statements to determine the outcome upon moving to a new square would be a nightmare. Can you envision the chaos? I thought so.
+
+Fortunately, a straightforward solution exists: arrays.
+
+An array, simply put, is an array of variables. Much like any other variable, an array possesses a name, but it contains diverse values accessed via indices. arrays can accommodate any desired size.
+
+Let's illustrate this with an example to stimulate our interest.
+
+```
+int[] board(30);
+
+for (uint x = 0; x < 30; x++)
+{
+board[x] = 2;
+}
+```
+
+Hold on, new concepts abound. Let's dissect the code line by line, as usual.
+
+The initial line instructs the engine to create a new array, akin to an array, comprising variables of type integer. The square brackets following 'int' denote that this variable is an array. Subsequently, we assign this array to a variable named 'board', facilitating subsequent access to its entries. The number within the parentheses specifies that this array comprises 30 entries.
+
+In the subsequent line, we employ a for loop to initialize a new variable named 'x', initiating a loop that iterates as long as 'x' is less than 30. On the ensuing line, a noteworthy occurrence unfolds. Here, we assign a value of two to an entry in the 'board' array. Notably, this entry isn't explicitly specified with a literal value in this instance. While it could have been, employing a loop proves more sensible as it obviates the need to explicitly specify each entry individually, mitigating the predicament encountered in the prior example with individual variables.
+
+It's noteworthy that the array index, denoting the entry in the array to access, is specified within left and right brackets, contrary to left and right parentheses, which one might have expected. Finally, the last line signifies the termination of our loop. Essentially, we've traversed the entire array of 30 items, uniformly assigning a value of 2 to each one. Subsequently, we only need to manually assign values to those array entries necessitated to diverge from 2. Significantly simpler than the aforementioned nightmare, wouldn't you agree? I certainly do.
+
+You might now comprehend the rationale behind specifying the first square on the board in the initial example as 0 rather than 1. This stems from the fact that the first index in an array is invariably 0, never 1. Ergo, if you possess an array with 100 entries and intend to iterate through it to execute a task, you'd commence at 0 and proceed up to 99. Attempting to access an entry outside the array's bounds yields a runtime error. Consequently, it's imperative to regularly test the game, particularly any sections related to arrays, to avert the wrath of disgruntled players.
+
+An array entry can be treated akin to a regular variable, enabling its use in if statements, loops, and other operations, albeit specifying an index in the array rather than a unique variable name.
+
+Arrays can extend to multiple dimensions, facilitating creations like an x-y grid or even x-y-z configurations.
+
+Consider creating a chessboard:
+
+```
+int[][] chessboard;
+```
+
+Multidimensional arrays, succinctly put, are arrays of arrays. Presently, a limitation in array usage impedes the specification of each dimension's size in a multidimensional array. To address this in our chessboard scenario, we manually resize the first dimension and subsequently use a loop to resize each entry in the second dimension, as demonstrated:
+
+```
+chessboard.resize(10);
+for (uint i = 0; i < 10; i++)
+{
+chessboard[i].resize(10);
+}
+```
+
+At this juncture, we possess an array named 'chessboard' sized 10 by 10. Notably, this resizing code cannot reside in the global scope; it must be encapsulated within a function such as 'main', although the actual declaration of the chessboard may remain global.
+
+Accessing an element in an array with multiple dimensions mirrors the approach utilized for accessing elements earlier, albeit specifying different dimensions within brackets. For instance, to access the square in the upper left corner of our chessboard:
+
+```
+chessboard[0][0] = 5;
+```
+
+And to access the square in the lower left corner:
+
+```
+chessboard[0][9] = 5;
+```
+
+Similar principles apply for boards with three dimensions. Suppose you desire a 3 by 3 by 3 board:
+
+```
+int[][][] board;
+board.resize(3);
+for (int i1 = 0; i1 < 3; i1++)
+{
+board[i1].resize(3);
+for (int i2 = 0; i2 < 3; i2++)
+{
+board[i1][i2].resize(3);
+}
+}
+```
+
+By utilizing an array with three dimensions, you could represent a grid with x, y, and z coordinates. This would facilitate a true 3D game with left, right, back, forward, up, and down movement.
+
 # Using Multiple Scripts
 
 As your game grows larger, managing everything within a single script becomes unmanageable. Hence, the necessity to utilize multiple scripts arises.
@@ -780,6 +883,7 @@ Using multiple scripts involves importing functionalities from one script to ano
 ```
 #include "dlg.ngt"
 ```
+
 After importing, you can utilize functions from the imported script within your main script. However, take caution to avoid conflicts. Do not create identical functions in multiple scripts. If a function exists in an imported script and is replicated in another, the engine will encounter conflicts and potentially fail.
 
 Utilizing multiple scripts helps in organizing code, enhancing readability, and efficiently managing complex game structures in NGT.

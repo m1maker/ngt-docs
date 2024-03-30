@@ -33,7 +33,7 @@ string trim = first.substr(7, 5);
 // Here, we use 7 to return "world" and length is 5. The 'w' is starting from 7, not 8, as the start position is 0 based.
 alert("final", trim);
 
-// Let's do a more complicated one.
+// Let's do a more complicated one, shall we?
 string a = "welcome to New Game Toolkit, and thank you for using the easiest language!";
 string what = "New Game Toolkit";
 string f = "welcome to ";

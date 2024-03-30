@@ -5,7 +5,9 @@ savedata object
 the savedata object allows you to manage your game progresses to load and save.
 
 # savedata(string filename, string enckey, int tt)
+
 ## parameters
+
 variable | description
 ---|---
 filename | the filename to save and load.
@@ -20,9 +22,10 @@ this class supports multiple save types.
 
 by default, the savedata_def type is used.
 
-it is however not advised to use INI for saving many data, for example in game messages, because INI is used new line and = seperater.
+it is however not advised to use INI for saving many data, for example in game messages, because INI is used new line and = seperater and therefore with the data with line break will potentially end up with unexpected data incorrection.
 
 ## example
+
 ```
 #include"savedata.ngt"
 savedata sd("config.ini","",savedata_ini);
@@ -52,11 +55,11 @@ exit();
 void loadsd()
 {
 sd.load();
-s=sd.readn("time");
+if(sd.exists("time")) s=sd.readn("time");
 }
 void savesd()
 {
-sd.d.delete_all();
+sd.clear();
 sd.add("time",f.elapsed_seconds);
 sd.save();
 }

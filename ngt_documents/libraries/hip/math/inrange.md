@@ -3,7 +3,9 @@
 this method will return whether the coordinates are in range, by giving current coordinates x y z, minimum and maximum ranged coordinates.
 
 # bool inrange(double x, double y, double z, double minx, double maxx, double miny, double maxy, double minz, double maxz)
+
 ## parameters
+
 variable | description
 ---|---
 x | the current x coordinate.
