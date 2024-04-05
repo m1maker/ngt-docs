@@ -423,6 +423,47 @@ In this example, the `add` function takes two integers (`a` and `b`) as paramete
 
 Functions play a crucial role in programming by allowing code reusability, modularization, and making complex tasks more manageable.
 
+# Functions to properties
+
+As you've already learn how function works, lets get this time dive into more useful, yet powerful converting function to property. This is called property accesser.
+
+Property accessers can be used as properties, for instance, `timer.elapsed_millis`. This is the method in timer object which is built by the engine.
+
+A property accesser can have getter and setter methods.
+
+## Getter property
+
+To define a getter property from method, consider below example. Please keep in mind that you should read all of the above learnings, especially on how to make your own functions before diving to this topic. A property method can be defined using the word `get_` before the name of your function, and add the word `property` after the right paren, like this.
+
+```
+double something=0; //This property will not be used, this will keep the value instead.
+double get_playtime() property
+{
+return something;
+}
+```
+
+## Setter property
+
+Defineing a set property function would be using the word `set_` before your function's name, and the word `property` after the right paren. You will also need to use void as function's return type. The function must have 1 parameter only.
+
+```
+double something=0; //This property will not be used, this will keep the value instead.
+void set_playtime(double value) property
+{
+something=value;
+}
+```
+
+## Usage of property accessers
+
+You can use previously defined methods / properties in 2 ways. For example, we've previously defined playtime.
+
+1. You can use `get_playtime()`, and `set_playtime(value)`.
+2. You can use `playtime` property instead.
+
+Property accesser is very useful to integrate properties that can change during the runtime automatically, not within a loop.
+
 # Conditional Statements
 
 Conditional statements are the backbone of decision-making in programming. They allow your code to make choices based on certain conditions.
