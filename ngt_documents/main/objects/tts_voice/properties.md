@@ -2,7 +2,7 @@
 
 tts_voice object
 
-# properties
+# Properties
 
 variable | description | type
 ---|---|---

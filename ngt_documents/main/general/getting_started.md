@@ -1,35 +1,35 @@
 # NGT Getting Started Tutorial
 
-this tutorial will talk ngt, the new game toolkit, which is an easy programming tool.
+This tutorial will talk NGT, the new game toolkit, which is an easy programming tool.
 
-# what is NGT?
+# What is NGT?
 
-NGT, New Game Toolkit, is an easy tool to develop your games from the ground up, without having prior programming knowledge at all. built with easy coding and rich features access, NGT is a tool which makes you a developer of your game.
+NGT, New Game Toolkit, is an easy tool to develop your games from the ground up, without having prior programming knowledge at all. Built with easy coding and rich features access, NGT is a tool which makes you a developer of your game.
 
-built with powerful features and endless possibilities, NGT is a great yet powerful audiogame engine.
+Built with powerful features and endless possibilities, NGT is a great yet powerful audiogame engine.
 
-not enough features as you want? NGT is an open source, you could contribute. you may find the useful resources section at the bottom of this document.
+Not enough features as you want? NGT is an open source, you could contribute. You may find the useful resources section at the bottom of this document.
 
 
-## the process
+## The process
 
 NGT is a scripting language, meaning the code that you write turns into a language that computers can understand. Once the code is translated into the computer's understandable language, the computer executes the commands exactly as instructed through the code. Additionally, let's distinguish between programming and scripting languages.
 
 The primary difference between programming and scripting languages lies in their execution. Programming languages usually need to be compiled before they can be executed, converting the code into an executable form. On the other hand, scripting languages are interpreted line by line during runtime without the need for a separate compilation step.
 
-## the engine
+## The engine
 
 NGT is an engine, meaning that you don't need special programs to build your games. All you need is the kit and a text editor, both of which you already have.
 
-# start off (language syntax)
+# Start off (language syntax)
 
-to start off, I may tell you important things. only then will you be able to take your coding skills to the next level of learning.
+To start off, I may tell you important things. Only then will you be able to take your coding skills to the next level of learning.
 
-## statements
+## Statements
 
-a statement is simply an instruction that the ngt will follow. each statement is followed by a semicolon (;). it can then be further sepret with a new line If you wish.
+A statement is simply an instruction that NGT will follow. Each statement is followed by a semicolon (;), it can then be further sepret with a new line If you wish.
 
-## blocks
+## Blocks
 
 Blocks execute code only if specific conditions are met. It's encapsulated by curly braces (`{` and `}`).
 
@@ -47,11 +47,11 @@ For a short comment, use `//` (two slashes). Anything written on that line will 
 
 For a longer comment, use `/*` (forward slash followed by an asterisk) to begin your comment. You may include multiple lines for your comments, and once finished, close it with `*/` (asterisk followed by a forward slash).
 
-# first script, printing text
+# First script, printing text
 
 One of the initial steps in programming is to display text on the screen. Consider the following example:
 
-first create the file test.ngt. then, you can start testing with codes.
+First create the file test.ngt. Then, you can start testing with codes.
 
 
 
@@ -95,7 +95,7 @@ This curly brace represents the beginning of a block. The code within this block
 
 
 
-a function which ngt provides by default.
+A function which NGT provides by default.
 
 
 
@@ -207,7 +207,7 @@ Then, we perform multiplication and assign the result to variable `z`, so `z` wi
 
 If you're unsure about the value range that will be assigned to a variable, it's advisable to use the `double` data type for floating-point numbers. `double` variables support a broader range of values, including those with decimals or fractions. In case the engine encounters a situation where the value exceeds the supported range, the variable will default to the minimum supported value, possibly causing unexpected behavior. Using `double` ensures a broader range of values and mitigates such potential issues.
 
-supported types:
+Supported types:
 
 
 
@@ -300,7 +300,7 @@ The `\r\n` sequence creates new lines, while the backslash `\"` lets me include 
 
 
 
-list of special characters:
+List of special characters:
 
 * `\"`: Represents a double quote `"`.
 * `\\`: Represents a backslash `\`.
@@ -472,11 +472,11 @@ Conditional statements are the backbone of decision-making in programming. They 
 
 The `if` statement evaluates a condition and executes a block of code if that condition is true. If the condition is false, the code inside the `if` block is skipped. You can also have `else if` and `else` blocks to handle alternative conditions.
 
-the `if` statement is as the natural language. for instance, 
+The `if` statement is as the natural language. For instance, 
 
 `If I become an engineer in the future, I would develop softwares that would be useful for everyone regardless of their disabilities.`
 
-as you can see, we use the word if in the text. although the language cannot do as complecated as this one, it can do based on the codes.
+As you can see, we use the word if in the text. Although the language cannot do as complecated as this one, it can do based on the codes.
 
 ```
 int x = 10;
@@ -581,8 +581,6 @@ Note that even the default case incorporates a break. You have flexibility in ar
 The switch condition accepts any expression yielding a numeric value. For instance:
 
 
-
-
 ```
 switch(number % 50)
 {
@@ -605,9 +603,9 @@ After experimenting with if statements, it's time to delve into the concept of l
 
 ## While Loops
 
-`while` loop, also here, is as natural language. for instance,
+`while` loop, also here, is as natural language. For instance,
 
-`while the escape key is not pressed, continue the script execution.`
+`While the escape key is not pressed, continue the script execution.`
 
 
 Take a look at the following code example where we translate above english text to the codes:
@@ -637,9 +635,9 @@ x++;
 
 ## Do While Loops
 
-Do while loops are similar but ensure that the code block is executed at least once. for instance, in english.
+Do while loops are similar but ensure that the code block is executed at least once. For instance, in english.
 
-`continue the script execution while the escape is not pressed.`
+`Continue the script execution while the escape is not pressed.`
 
 Here's an example translated to the codes:
 
@@ -704,15 +702,15 @@ The loop has no specific condition (while(true)), creating an endless loop. The 
 
 # `file` and `filesystem` class
 
-the `file` object is useful to read and write files on the disk. the `filesystem` object, on the other hand, is useful for performing additional actions on the files and folders.
+The `file` object is useful to read and write files on the disk. The `filesystem` object, on the other hand, is useful for performing additional actions on the files and folders.
 
 ## file
 
-in this chapter, we'll explore the file class to read / write files on the disk.
+In this chapter, we'll explore the file class to read / write files on the disk.
 
-### reading files
+### Reading files
 
-the simplest way to read the files is using the `read` method within the file object. consider the following example.
+The simplest way to read the files is using the `read` method within the file object. Consider the following example.
 
 ```
 void main()
@@ -724,31 +722,31 @@ f.close();
 }
 ```
 
-wait, wait, many new things here. lets get explained.
+Wait, wait, many new things here. Lets get explained.
 
-as you already know the usage of the main function, we'll skip the part.
+As you already know the usage of the main function, we'll skip the part.
 
 
 `file f;`
 
-this specifys the object as f.
+This specifys the object as f.
 
 `f.open("hello.txt","r");`
 
-this tells the file object (f) in this case, to open `hello.txt`. the `r` character within the quotes tells the object to open as read mode.
+This tells the file object (f) in this case, to open `hello.txt`. The `r` character within the quotes tells the object to open as read mode.
 
 `string content=f.read(f.get_size());`
 
-this tells the object to read the contents from the file that is opened. the `get_size` method tells the read method to read all contents defined by its size. would you usually do this to read all contents from the file.
+This tells the object to read the contents from the file that is opened. The `get_size` method tells the read method to read all contents defined by its size. Would you usually do this to read all contents from the file.
 
 `f.close();`
 
-this tells the object to close the current file, allowing to be used the object again. in short, the file object can be used over and over to read from file to file. you do not need to declare each object for each file. declaring each object for each file is not generally recommended as it reduces the over all performance of the script.
+This tells the object to close the current file, allowing to be used the object again. In short, the file object can be used over and over to read from file to file. You do not need to declare each object for each file. Declaring each object for each file is not generally recommended as it reduces the over all performance of the script.
 
 
-### writing to the files.
+### Writing to the files.
 
-after we learned how to read from a file, lets continue on how to write into the file.
+After we learned how to read from a file, lets continue on how to write into the file.
 
 ```
 void main()
@@ -760,47 +758,47 @@ f.close();
 }
 ```
 
-now, we used the open method to specify the file name. however, we now used the `w` character as open mode instead of the `r` character that we previously used. the `w` character means write.
+Now, we used the open method to specify the file name. However, we now used the `w` character as open mode instead of the `r` character that we previously used. The `w` character means write.
 
-next, we used the `write` method, specifying the contents that is to be written.
+Next, we used the `write` method, specifying the contents that is to be written.
 
-after executing the codes, move back to your disk window and you'll be able to see the `hello.txt` and content `hello world!` in it.
+After executing the codes, move back to your disk window and you'll be able to see the `hello.txt` and content `hello world!` in it.
 
-### file object methods
+### File object methods
 
-here are the list of methods of the file object.
+Here are the list of methods of the file object.
 
 function | description | return value
 ---|---|---
-open | opens the file to be read or write. it requires the filename, and the open mode(`r` or `w`) | 0 on success, -1 otherwise.
-close | this function closes the file object. | 0 on success, -1 otherwise.
-read | this function reads the contents from the currently opened file. it requires the length of the contents to be read, and using `get_size` method to read all contents otherwise. | the content of the file on success, an empty string otherwise.
-write | this function writes the contents into the opened file. it requires the content that is to be written. this method can only work on the file opened in write mode. | 0 on success, -1 otherwise
-get_size | this function returns the size of the file. | the size of the currently opened file on success, 0 otherwise.
+open | Opens the file to be read or write. It requires the filename, and the open mode(`r` or `w`) | 0 on success, -1 otherwise.
+close | This function closes the file object. | 0 on success, -1 otherwise.
+read | This function reads the contents from the currently opened file. It requires the length of the contents to be read, and using `get_size` method to read all contents otherwise. | The content of the file on success, an empty string otherwise.
+write | This function writes the contents into the opened file. It requires the content that is to be written. This method can only work on the file opened in write mode. | 0 on success, -1 otherwise
+get_size | This function returns the size of the file. | The size of the currently opened file on success, 0 otherwise.
 
 
 ## filesystem
 
-after having we learned the file object, lets explore the filesystem object!
+After having we learned the file object, lets explore the filesystem object!
 
-for the basics, the filesystem object can perform additional actions, such as checking the current path where the script is being executed, create / remove / copy / move directories and files.
+For the basics, the filesystem object can perform additional actions, such as checking the current path where the script is being executed, create / remove / copy / move directories and files.
 
 ### filesystem object methods.
 
 function | description | return value
 ---|---|---
-change_current_path | this method changes the current working directory, where the default is the directory that the script is being executed. | true on success, false on failure.
-dir_exists | this method checks whether the given directory is exist. true on success, false on failure.
-file_exists | this method checks whether the given file is exist. true on success, false on failure.
-get_create_date_time | returns the date that the file is created. | the datetime object with the date set on success, a runtime error Otherwise.
-get_current_path | returns the current path. | a string with the current working directory on success, an empty string Otherwise.
-get_dirs | lists all directories on the current set path. | an array with the list of directories on success, an empty array Otherwise.
-get_files | lists all files on the current set path. | an array with the list of files on success, an empty array Otherwise.
-get_modify_date_time | returns the date that the file is modifyed. | the datetime object with the date set on success, a runtime error Otherwise.
-is_dir | checks whether the given string is a directory. | true or false.
-is_file | checks whether the given string is a file. | true or false.
-make_dir | creates 1 or more directories. | 0 on success, -1 Otherwise.
-remove_dir | deletes the directory. | 0 on success and -1 otherwise.
+change_current_path | This method changes the current working directory, where the default is the directory that the script is being executed. | true on success, false on failure.
+dir_exists | This method checks whether the given directory is exist. true on success, false on failure.
+file_exists | This method checks whether the given file is exist. true on success, false on failure.
+get_create_date_time | Returns the date that the file is created. | the datetime object with the date set on success, a runtime error Otherwise.
+get_current_path | Returns the current path. | a string with the current working directory on success, an empty string Otherwise.
+get_dirs | Lists all directories on the current set path. | an array with the list of directories on success, an empty array Otherwise.
+get_files | Lists all files on the current set path. | an array with the list of files on success, an empty array Otherwise.
+get_modify_date_time | Returns the date that the file is modifyed. | the datetime object with the date set on success, a runtime error Otherwise.
+is_dir | Checks whether the given string is a directory. | true or false.
+is_file | Checks whether the given string is a file. | true or false.
+make_dir | Creates 1 or more directories. | 0 on success, -1 Otherwise.
+remove_dir | Deletes the directory. | 0 on success and -1 otherwise.
 
 
 # arrays
@@ -929,12 +927,12 @@ After importing, you can utilize functions from the imported script within your 
 
 Utilizing multiple scripts helps in organizing code, enhancing readability, and efficiently managing complex game structures in NGT.
 
-# useful resources
+# Useful resources
 
-[official website](https://ngtcode.dev)
+[Official Website](https://ngtcode.dev)
 
-[ngt official development repository](https://github.com/m1maker/NGT)
+[NGT official development repository](https://github.com/m1maker/NGT)
 
-[ngt custom libraries repository](https://github.com/harrymkt/ngt-includes)
+[NGT custom libraries repository](https://github.com/harrymkt/ngt-includes)
 
-[ngt documentation repository](https://github.com/harrymkt/ngt-docs)
+[NGT documentation repository](https://github.com/harrymkt/ngt-docs)

@@ -3,8 +3,6 @@
 join
 
 
-
-
 this function returns a string joined from array based on the seperater
 
 # string join(string[] array, string sep)

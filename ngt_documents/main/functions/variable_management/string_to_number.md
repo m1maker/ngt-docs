@@ -3,8 +3,6 @@
 string_to_number
 
 
-
-
 This method returns the number out of a string.
 
 # double string_to_number(string text, uint&out; byte)

@@ -17,7 +17,7 @@ none
 
 ## Remarks
 
-this method will close the associated file on the object, allowing to be used again.
+This method will close the associated file on the object, allowing to be used again.
 
 ## Example
 
