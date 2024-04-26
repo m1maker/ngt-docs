@@ -936,3 +936,5 @@ Utilizing multiple scripts helps in organizing code, enhancing readability, and 
 [NGT custom libraries repository](https://github.com/harrymkt/ngt-includes)
 
 [NGT documentation repository](https://github.com/harrymkt/ngt-docs)
+
+After reading Getting Started tutorial, you may want to read the advance tutorial if you wish to take your engine knowledge to the next level.

@@ -7,10 +7,6 @@ The vector object is used within the map, corresponding to coordinates x, y, and
 
 # vector()
 
-## Parameters
-
-None
-
 ## Remarks
 
 The vector object is used within the map, corresponding to coordinates x, y, and z. It can be useful for map coordination, probably used within 2 or 3-dimensional grids. A list of properties will be provided below. This document will not create a separate documentation for vector object properties, as there are not many properties.

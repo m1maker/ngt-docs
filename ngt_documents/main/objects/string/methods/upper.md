@@ -16,12 +16,11 @@ a string changed to uppercase on success, an empty string otherwise.
 
 ## Remarks
 
-None.
+Unlike the `capitalize` method, this method will change the case of the string completely, while the capitalize method only changes the first character.
 
 ## Example
 
 ```
-// Declare a string and check if it is uppercase.
 void main()
 {
 string example = "Good job!";

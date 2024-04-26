@@ -21,7 +21,6 @@ None.
 ## Example
 
 ```
-// Declare a string and check if it is capitalizecase.
 void main()
 {
 string example = "good job!";

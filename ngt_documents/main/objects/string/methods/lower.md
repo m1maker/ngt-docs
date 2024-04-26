@@ -21,7 +21,6 @@ None.
 ## Example
 
 ```
-// Declare a string and check if it is lowercase.
 void main()
 {
 string example = "Good job!";
