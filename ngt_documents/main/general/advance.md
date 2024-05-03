@@ -39,4 +39,4 @@ exit();
 }
 ```
 
-As you can see, the engine does not cause the runtime error and stop execution. Instead, it skippeds to the next code, more like continue we learned in the loops chapter.
+As you can see, the engine does not cause the runtime error and stop execution. Instead, it skippeds to the next code, more like continue we learned in the loops chapter, and manually exits the program.

@@ -2,7 +2,7 @@
 
 string object
 
-This method is used to change the first character of the given string to uppercase.
+This method will capitalize the first character in a given string.
 
 # string capitalize()
 
@@ -16,7 +16,7 @@ a string with the first character changed to uppercase on success, an empty stri
 
 ## Remarks
 
-None.
+Unlike the `upper` method, this will only capitalize the first character in a given string, while the upper method changes the string to uppercase completely.
 
 ## Example
 

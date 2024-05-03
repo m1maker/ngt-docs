@@ -2,15 +2,15 @@
 
 screen_reader_detect
 
-this method will return a string defineing the current running screen reader.
+This method will return a string defineing the current running screen reader.
 
 # string screen_reader_detect()
 
-## return value
+## Return value
 
-a string of the currently running screen reader on success, an empty string on failure.
+A string of the currently running screen reader on success, an empty string on failure.
 
-## example
+## Example
 
 ```
 void main()
@@ -18,11 +18,11 @@ void main()
 string s=screen_reader_detect();
 if(s.is_empty())
 {
-alert("information","your operating system is not using any screen reader, ok");
+alert("Information","Your operating system is not using any screen reader, ok");
 }
 else
 {
-alert("information","your screen reader is detected. "+s,"quit");
+alert("Information","Your screen reader is detected. "+s,"Quit");
 }
 }
 ```

@@ -2,7 +2,6 @@
 
 vector object
 
-
 The vector object is used within the map, corresponding to coordinates x, y, and z, see remarks.
 
 # vector()

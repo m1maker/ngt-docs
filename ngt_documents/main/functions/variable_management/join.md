@@ -3,24 +3,24 @@
 join
 
 
-this function returns a string joined from array based on the seperater
+This function returns a string joined from array based on the seperater
 
 # string join(string[] array, string sep)
 
-## parameters
+## Parameters
 
-variable| description
+Variable| Description
 ---|---
-array | an array to base
-sep | the seperater, such as \r\n for new line
+array | An array to base
+sep | The seperater, such as `\r\n` for new line
 
 ## return value
 
-a string with the joined data on success, an empty string on failure
+A string with the joined data on success, an empty string on failure.
 
-## remarks
+## Remarks
 
-none
+None
 
 ## example
 

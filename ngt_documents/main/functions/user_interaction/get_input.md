@@ -19,7 +19,7 @@ A string containing any characters that have been pressed inside the game window
 
 This function only traps printable characters such as letters, numbers, punctuation, symbols, etc. All other keys such as tab, control, escape, and enter are ignored. 
 
-this function also supports **UTF8**, meaning with every language letters could be written.
+this function also supports **UTF8** (Unicode), meaning with every language letters could be written.
 
 ## Example
 
@@ -35,7 +35,7 @@ while(true)
 {
 delay(5);
 update_game_window();
-if(wait_time.elapsed_second>= 8000)
+if(wait_time.elapsed_millis>= 8000)
 {
 wait_time.pause();
 alert("Thanks", "Thanks for waiting for me. You typed the following characters within 8 seconds: " + get_input() + ". Goodbye.");

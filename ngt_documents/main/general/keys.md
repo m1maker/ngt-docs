@@ -26,6 +26,9 @@ These constants are meant to be used in conjunction with the key_down and key_pr
 * SDLK_8
 * SDLK_9
 * SDLK_SEMICOLON
+* SDLK_LEFTBRACKET
+* SDLK_RIGHTBRACKET
+* SDLK_BACKSLASH
 * SDLK_a
 * SDLK_b
 * SDLK_c

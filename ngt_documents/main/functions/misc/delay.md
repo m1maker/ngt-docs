@@ -28,12 +28,11 @@ This function will delay the execution by a given number of milliseconds before 
 
 ```
 // This example shows the wait and delay methods.
-#include "include/keys"
 int delayer = 5;
 sound beep;
 sound dswicher;
-void main() {
-init_engine();
+void main()
+{
 beep.load("C:/windows/media/Windows Ding.wav");
 dswicher.load("C:/windows/media/Windows Navigation Start.wav");
 show_game_window("Test");
@@ -42,16 +41,19 @@ speak("Waiting example. Waiting 3 seconds.");
 wait(3000);
 speak("Start delaying", false);
 speak("Press F1 or F2 key to control delay. Press Tab key to play sound");
-while (key_down(SDLK_ESCAPE) == false) {
+while (key_down(SDLK_ESCAPE) == false)
+{
 update_game_window();
 delay(delayer);
 if (delayer < 6) delayer = 5;
-if (key_repeat(SDLK_F1)) {
+if (key_repeat(SDLK_F1))
+{
 dswicher.play();
 delayer--;
 speak("Delay set to " + delayer);
 }
-if (key_repeat(SDLK_F2)) {
+if (key_repeat(SDLK_F2))
+{
 dswicher.play();
 delayer++;
 speak("Delay set to " + delayer);
@@ -59,6 +61,6 @@ speak("Delay set to " + delayer);
 if (key_down(SDLK_TAB)) beep.play();
 }
 beep.close();
-quit();
+exit();
 }
 ```
