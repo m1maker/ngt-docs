@@ -2,11 +2,7 @@
 
 key_released
 
-
-
-
 This function checks if a particular key on the keyboard has just been released.
-
 
 # bool key_released(int key)
 

@@ -7,6 +7,10 @@ These are properties that can be used globally, meaning from anywhere.
 Property | Description | Type
 ---|---|---
 SCRIPT_COMPILED | Returns true if the script is compiled into executable, false otherwise. | bool
+window_active | Returns true or false whether the current window is active, meaning if it has keyboard set focus. | bool
+window_title | Sets the title of the current window. | string
+window_closeable | Sets whether the window can be closed using the companation of ALT+F4. | bool
+
 
 ## General properties
 

@@ -1,14 +1,12 @@
 # functions
 
-show_game_window
-
-
+show_window
 
 
 This function displays the main window of your game on the user's screen.
 
 
-# void show_game_window(string title, int width, int height, bool closable)
+# void show_window(string title, int width, int height, bool closable)
 
 
 ## Parameters
@@ -37,10 +35,9 @@ It is never legal to call this function more than once during the course of your
 
 ```
 // Display the window and wait for the user to close it.
-
 void main()
 {
-show_game_window("ngt test window",400,600);
+show_window("ngt test window",400,600);
 while(true)
 {
 delay(5);

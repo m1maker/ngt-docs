@@ -212,13 +212,14 @@ Supported types:
 
 
 
-* **int:** Holds integer numbers within a defined range.
-* **int64:** Holds integer numbers within a more defined range.
-* **short:** Holds a smaller range of integer values than int, using less memory.
-* **uint:** Holds only positive whole numbers (zero and above).
-* **long:** Holds a larger range of integer values compared to int.
-* **float:** Holds decimal fractions with limited precision.
-* **double:** Holds decimal fractions with higher precision and a wider range of values than float.
+* **int**; Holds integer numbers within a defined range.
+* **int64**; Holds integer numbers within a more defined range.
+* **short**; Holds a smaller range of integer values than int, using less memory.
+* **uint**; Holds only positive whole numbers (zero and above).
+* **uint64**; Holds only positive whole numbers (zero and above). It can hold more than uint type.
+* **long**; Holds a larger range of integer values compared to int.
+* **float**; Holds decimal fractions with limited precision.
+* **double**; Holds decimal fractions with higher precision and a wider range of values than float.
 
 
 
@@ -614,13 +615,13 @@ Take a look at the following code example where we translate above english text 
 while (key_pressed(SDLK_ESCAPE)==false)
 {
 delay(5);
-update_game_window();
+update_window();
 }
 ```
 
 The loop runs as long as the escape key is not pressed. The code inside the loop is executed repeatedly.
 
-`delay(5);` is necessary for CPU usage optimization.
+`delay(5);` is necessary for CPU usage optimization. Failure to use this could result system hangs and unresponsive!
 
 If you want to perform a task a specific number of times, you can use a while loop. Here's an example that runs a code block 1000 times:
 
@@ -644,7 +645,7 @@ Here's an example translated to the codes:
 ```
 do
 {
-update_game_window();
+update_window();
 }
 while(!key_pressed(SDLK_ESCAPE));
 ```
@@ -693,7 +694,7 @@ if(yet_another_variable==true)
 continue;
 }
 // more code here...
-update_game_window();
+update_window();
 }
 ```
 

@@ -1,14 +1,10 @@
 # functions
 
-update_game_window
-
-
-
+update_window
 
 This function updates the game window. See remarks.
 
-
-# void update_game_window()
+# void update_window(bool wait_event=false)
 
 ## Parameters
 
@@ -30,7 +26,7 @@ void main()
 show_game_window("game");
 while(true)
 {
-update_game_window();
+update_window();
 }
 }
 ```

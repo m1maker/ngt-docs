@@ -1,14 +1,11 @@
 # functions
 
-set_game_window_title
-
-
-
+set_window_title
 
 This function changes the title of the window.
 
 
-# void set_game_window_title(string new_title)
+# void set_window_title(string new_title)
 
 ## Parameters
 
@@ -32,7 +29,7 @@ void main()
 {
 show_game_window("first window");
 wait(3000);
-set_game_window_title("second window");
+set_window_title("second window");
 wait(3000);
 exit();
 }

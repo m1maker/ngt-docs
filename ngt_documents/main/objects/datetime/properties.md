@@ -2,13 +2,13 @@
 
 datetime object
 
-# properties
+# Properties
 
-variable| description  
+Variable | Description  
 ---|---  
-year | the year.  
-month | the month.  
-day | the day.  
-hour | the hour.  
-minute | the minute.  
-second | the second.
+year | The year.
+month | The month.
+day | The day.
+hour | The hour.
+minute | The minute.
+second | The second.

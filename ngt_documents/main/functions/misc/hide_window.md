@@ -1,14 +1,11 @@
 # functions
 
-hide_game_window
-
-
-
+hide_window
 
 This function hides the main window of your game on the user's screen.
 
 
-# void hide_game_window()
+# void hide_window()
 
 ## Parameters
 
@@ -30,7 +27,7 @@ void main()
 {
 show_game_window("first");
 wait(3000);
-hide_game_window();
+hide_window();
 wait(3000);
 show_game_window("second");
 wait(3000);
