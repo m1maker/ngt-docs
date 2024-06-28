@@ -1,46 +1,36 @@
 # NGT Getting Started Tutorial
-
 This tutorial will talk NGT, the new game toolkit, which is an easy programming tool.
 
 # What is NGT?
-
 NGT, New Game Toolkit, is an easy tool to develop your games from the ground up, without having prior programming knowledge at all. Built with easy coding and rich features access, NGT is a tool which makes you a developer of your game.
 
 Built with powerful features and endless possibilities, NGT is a great yet powerful audiogame engine.
-
 Not enough features as you want? NGT is an open source, you could contribute. You may find the useful resources section at the bottom of this document.
 
 
 ## The process
-
 NGT is a scripting language, meaning the code that you write turns into a language that computers can understand. Once the code is translated into the computer's understandable language, the computer executes the commands exactly as instructed through the code. Additionally, let's distinguish between programming and scripting languages.
 
 The primary difference between programming and scripting languages lies in their execution. Programming languages usually need to be compiled before they can be executed, converting the code into an executable form. On the other hand, scripting languages are interpreted line by line during runtime without the need for a separate compilation step.
 
 ## The engine
-
 NGT is an engine, meaning that you don't need special programs to build your games. All you need is the kit and a text editor, both of which you already have.
 
 # Start off (language syntax)
-
 To start off, I may tell you important things. Only then will you be able to take your coding skills to the next level of learning.
 
 ## Statements
-
 A statement is simply an instruction that NGT will follow. Each statement is followed by a semicolon (;), it can then be further sepret with a new line If you wish.
 
 ## Blocks
-
 Blocks execute code only if specific conditions are met. It's encapsulated by curly braces (`{` and `}`).
 
 ## Expressions
-
 Expressions typically serve as specialized statements and often mark the starting point for a code block. An expression commonly comprises a keyword followed by the expression code, enclosed in parentheses. Keywords, such as 'if' and 'while', instruct the engine to perform specific actions. For instance, 'if' directs the engine to verify whether a given expression is true, while 'while' prompts the compiler to iterate a block of code until the expression conditions are satisfied.
 
 It's essential to note that expressions do not conclude with a semicolon. They represent conditions rather than direct instructions to the engine. These conditions dictate when the instructions should be executed.
 
 ## Comments
-
 A comment serves various purposes such as displaying author information, dates, or any relevant details. There are no strict rules for comments; you can write in English, include personal information, or jot down notes that may or may not aid others' understanding.
 
 For a short comment, use `//` (two slashes). Anything written on that line will not be executed.
@@ -48,7 +38,6 @@ For a short comment, use `//` (two slashes). Anything written on that line will 
 For a longer comment, use `/*` (forward slash followed by an asterisk) to begin your comment. You may include multiple lines for your comments, and once finished, close it with `*/` (asterisk followed by a forward slash).
 
 # First script, printing text
-
 One of the initial steps in programming is to display text on the screen. Consider the following example:
 
 First create the file test.ngt. Then, you can start testing with codes.
@@ -131,15 +120,11 @@ This closing curly brace signifies the end of the main function, indicating to t
 
 
 # Variables
-
-## Variables; What Are They?
-
 If you've ever used a container to hold something—a box for your favorite toys, a jar for cookies—understanding variables is quite similar. In programming, a variable acts like one of these containers; it stores information like a player's health in a game, the price of a commodity, or even a profound truth like the answer to life, the universe, and everything being 42.
 
 Think of variables as flexible containers; they can hold different types of information, and you can change or use that information as needed while programming.
 
 ## Declaring and Assigning Variables
-
 Declaring a variable in programming is like naming a container. You specify the type of information it will hold, followed by a name for easy identification later. Every container—here, a variable—needs a name, and it follows certain rules: it can contain letters (both upper and lower case), numbers (except as the first character), and underscores.
 
 Here's an example:
@@ -158,7 +143,6 @@ float fishPrice;
 In this code snippet, we've created two containers: `playerScore` to hold whole numbers (an `int`), and `fishPrice` to contain numbers with decimal points (a `float`).
 
 ## Integer Variables
-
 Integer variables store whole numbers, such as -5, 0, or 100, without any fractional parts. They can represent a wide range of values, including negative and positive numbers.
 
 example:
@@ -182,7 +166,6 @@ First, we set `a` to have the value of 2, then `b` to 5.
 Next, we perform addition and assign the result to variable `c`, so `c` will hold the value of `a + b`, which is 7.
 
 ## Floating-Point Variables
-
 Floating-point variables, often referred to as "floats" or "doubles," store decimal numbers. They can represent values like 3.14, -0.001, or 10.5. These variables include both the integer and fractional parts of a number.
 
 example:
@@ -224,7 +207,6 @@ Supported types:
 
 
 ## String Variables
-
 String variables hold sequences of characters, like text or words. Unlike integers and floating-point numbers, strings are not treated as numerical values. Instead, they are treated as sequences of individual characters that can include letters, numbers, symbols, and spaces.
 
 example:
@@ -312,7 +294,6 @@ List of special characters:
 
 
 ## Constants
-
 A constant in NGT is akin to a regular variable but with a fundamental distinction. Once a constant is assigned a value, it remains fixed throughout the program's execution, unlike a variable that can vary during runtime.
 
 Constants primarily serve readability and save time in code maintenance. You declare a constant similarly to a variable, but with the addition of the keyword `const` preceding the data type.
@@ -933,9 +914,5 @@ Utilizing multiple scripts helps in organizing code, enhancing readability, and 
 [Official Website](https://ngtcode.dev)
 
 [NGT official development repository](https://github.com/m1maker/NGT)
-
-[NGT custom libraries repository](https://github.com/harrymkt/ngt-includes)
-
-[NGT documentation repository](https://github.com/harrymkt/ngt-docs)
 
 After reading Getting Started tutorial, you may want to read the advance tutorial if you wish to take your engine knowledge to the next level.

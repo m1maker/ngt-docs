@@ -1,13 +1,10 @@
 # NGT Advance Tutorial
-
 Once you have read the getting started tutorial, here is the Tutorial with more advance engine knowledge. I made 2 parts so any of you can decide whether to stop at getting started Tutorial or to take your engine knowledge to the advance level.
 
 ## Engine exceptions
-
 engine exceptions are errors that catched using runtime error. You cannot possibly imagine that you can catch any runtime errors and avoid from being stopped execution, however here you really can!
 
 ### Throwing errors
-
 The first thing we gonna learn is how to throw an exception, meaning to execute a runtime error.
 
 To execute a heavy attack, I mean, the exception, you will use the throw function, like this.
@@ -42,7 +39,6 @@ exit();
 As you can see, the engine does not cause the runtime error and stop execution. Instead, it skippeds to the next code, more like continue we learned in the loops chapter, and manually exits the program.
 
 ## Any, datatype
-
 An any type is used to point to any type of value. This is best to use in areas where you don't know exactly what type or value will be stored.
 
 An any is an object
@@ -50,7 +46,7 @@ An any is an object
 The following functions should be note before you read into examples.
 
 * `void store(?value);` which stores the value of any kind.
-* `bool retrieve(?value);` which trys to retrieve the value of the object.
+* `bool retrieve(?&out value);` which trys to retrieve the value of the object.
 
 Constructor
 
@@ -96,7 +92,6 @@ custom_speak(any(true),false); //Bool.
 Yep, you found that useful, aren't you?
 
 ### Complete source code for any custom speak function
-
 Here is a complete source code, including the usage example, of the custom_speak function, of any object.
 
 ```
