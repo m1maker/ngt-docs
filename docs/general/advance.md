@@ -36,12 +36,12 @@ exit();
 }
 ```
 
-As you can see, the engine does not cause the runtime error and stop execution. Instead, it skippeds to the next code, more like continue we learned in the loops chapter, and manually exits the program.
+Without try catch block, this will throw runtime error, because we're accessing the null object. But as you can see, the engine does not cause the runtime error and stop execution. Instead, it skippeds to the next code, more like continue we learned in the loops chapter, and manually exits the program.
 
 ## Any, datatype
-An any type is used to point to any type of value. This is best to use in areas where you don't know exactly what type or value will be stored.
+An `any` type is used to point to any type of value. This is best to use in areas where you don't know exactly what type or value will be stored.
 
-An any is an object
+An `any` is an object
 
 The following functions should be note before you read into examples.
 
@@ -55,6 +55,7 @@ Constructor
 Now, lets dive into example. Lets say we have to use the speak function provided by NGT, but we stuck here because you want to speak many types, including strings, ints, floats, or possibly objects.
 
 We will first implement the custom_speak function that supports string, int, float, bool.
+Please note that in latest development, string accepts numbers passing too, so you don't have to actually implement this logic.
 
 Note. If you want numbers of all types, using int and double is enough.
 
@@ -77,7 +78,7 @@ speak(text,interrupt); //Finally speaks the text.
 }
 ```
 
-Now, we've defined the speak custom function, with supporting string, bool, intiger and floatingpoint. Next, we'll use any object before specifying the t parameter in that speak function.
+Now, we've defined the speak custom function, with supporting string, bool, intiger and floatingpoint. Next, we'll use `any` object before specifying the t parameter in that speak function.
 
 ```
 void main()
@@ -92,7 +93,7 @@ custom_speak(any(true),false); //Bool.
 Yep, you found that useful, aren't you?
 
 ### Complete source code for any custom speak function
-Here is a complete source code, including the usage example, of the custom_speak function, of any object.
+Here is a complete source code, including the usage example, of the custom_speak function, of `any` object.
 
 ```
 void main()

@@ -1,36 +1,28 @@
-# ngt
+# NGT Documentation
+This contains documents for NGT, the New Game Toolkit.
 
-this contains documents for ngt, the new game toolkit.
+You can also contribute.
 
-in the NGT documents folder, you'll find main and libraries. the main folder is that the functions and objects which are no need of additional libraries, while the libraries folder contain functions and objects which can only be used by including additional libraries.
+## Download
+To download the zip.
 
-you can also contribute.
+* Click on the code menu.
+* Click on download zip.
 
-## download
+## Discussion
+Discussion is a place to talk and share knowledge. Join the discussions to help improve the documentations!
 
-to download the zip.
-
-* click on the code menu.
-* click on download zip.
-
-## discussion
-
-discussion is a place to talk and share knowledge. join the discussions to help improve the documentations!
-
-[join the discussion!](https://github.com/harrymkt/ngt-docs/discussions)
+[Join the discussion!](https://github.com/m1maker/ngt-docs/discussions)
 
 ## issues
+Issue is a place where you can submit issues. It is as the discussionboard.
 
-issue is a place where you can submit issues. it is as the discussionboard.
+[Join the issues!](https://github.com/m1maker/ngt-docs/issues)
 
-[join the issues!](https://github.com/harrymkt/ngt-docs/issues)
+## Contributing
+You can help improve the documentations by contributing. Not enough Github knowledge to contribute? Don't worry. You can improve the help by starting discussions and issues to tell other contributors what need to be fixed or added. Every contribution counts and helps.
 
-## contributing
-
-you can help improve the documentations by contributing. not enough github knowledge to contribute? don't worry. you can improve the help by starting discussions and issues to tell other contributors what need to be fixed or added. every contribution counts and helps.
-
-### fork
-
+### Fork
 your first step to be a contributor would be forking the repository.
 
 just click on `fork` icon and choose the option that says `contribute to the repository` or something similar.
