@@ -29,7 +29,7 @@ void main()
 show_game_window("Test Game");
 while(true)
 {
-update_game_window();
+wait(5);
 if(key_pressed(SDLK_SPACE))
 {
 speak("Space bar pressed.");
@@ -40,7 +40,7 @@ speak("Space bar released.");
 }
 if(key_pressed(SDLK_ESCAPE))
 {
-quit();
+exit();
 }
 // Other code goes here.
 }

@@ -33,7 +33,7 @@ void main()
 show_game_window("Test Game");
 while(true)
 {
-update_game_window();
+wait(5);
 if(key_down(SDLK_LALT) && key_pressed(SDLK_F4))
 {
 exit();

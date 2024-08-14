@@ -18,6 +18,7 @@ These are properties that can be used globally, meaning from anywhere.
 | window_title | Sets the title of the current window. | string |
 | window_closeable | Sets whether the window can be closed using the companation of ALT+F4. | bool |
 | window_fullscreen | Sets whether the window should be in full screen. | bool |
+
 ## General properties
 
 | Property | Description | Type |

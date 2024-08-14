@@ -40,8 +40,7 @@ void main()
 show_window("ngt test window",400,600);
 while(true)
 {
-delay(5);
-update_game_window();
+wait(5);
 }
 }
 ```

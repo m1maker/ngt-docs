@@ -31,7 +31,7 @@ ding.load("c:/windows/media/ding.wav");
 show_window("Ding Test");
 while(true)
 {
-update_window();
+wait(5);
 if((time.elapsed_millis<1000)||(!key_down(SDLK_SPACE)))
 {
 if(key_pressed(SDLK_ESCAPE))

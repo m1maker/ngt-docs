@@ -33,8 +33,7 @@ alert("Waiting", "You have eight seconds to type some text.");
 show_game_window("Typing test");
 while(true)
 {
-delay(5);
-update_game_window();
+wait(5);
 if(wait_time.elapsed_millis>= 8000)
 {
 wait_time.pause();
