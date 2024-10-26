@@ -1,23 +1,18 @@
 # NGT Getting Started Tutorial
-This tutorial will talk NGT, the new game toolkit, which is an easy programming tool.
 
-# What is NGT?
-NGT, New Game Toolkit, is an easy tool to develop your games from the ground up, without having prior programming knowledge at all. Built with easy coding and rich features access, NGT is a tool which makes you a developer of your game.
+This tutorial will introduce you to NGT (New Game Toolkit), an easy-to-use game development environment that enables you to create games without prior programming knowledge.
 
-Built with powerful features and endless possibilities, NGT is a great yet powerful audiogame engine.
-Not enough features as you want? NGT is an open source, you could contribute. You may find the useful resources section at the bottom of this document.
+## What is NGT?
+NGT, or New Game Toolkit, is a user-friendly game engine designed for rapid game development. It combines powerful features with an intuitive interface, making it accessible even to those new to programming. Built on top of the AngelScript language, NGT allows you to build games from scratch, leveraging its rich set of tools and functionalities.
 
+## The Process
+NGT is a scripting-based engine, meaning that your code will be translated into a form understandable by the computer. Unlike traditional programming languages that require compilation, scripting languages like NGT are interpreted at runtime. This makes development faster and more efficient.
 
-## The process
-NGT is a scripting language, meaning the code that you write turns into a language that computers can understand. Once the code is translated into the computer's understandable language, the computer executes the commands exactly as instructed through the code. Additionally, let's distinguish between programming and scripting languages.
+## The Engine
+NGT does not require special software for game development; all you need is the engine itself and a text editor. No additional setup is required!
 
-The primary difference between programming and scripting languages lies in their execution. Programming languages usually need to be compiled before they can be executed, converting the code into an executable form. On the other hand, scripting languages are interpreted line by line during runtime without the need for a separate compilation step.
-
-## The engine
-NGT is an engine, meaning that you don't need special programs to build your games. All you need is the kit and a text editor, both of which you already have.
-
-# Start off (language syntax)
-To start off, I may tell you important things. Only then will you be able to take your coding skills to the next level of learning.
+# Start off (Language Syntax)
+To begin your journey with NGT, it's important to understand some basic syntax rules.
 
 ## Statements
 A statement is simply an instruction that NGT will follow. Each statement is followed by a semicolon (;), it can then be further sepret with a new line If you wish.
