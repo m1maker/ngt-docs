@@ -111,3 +111,6 @@
 
 ### `void reset_keyboard()`
 - **Description**: Resets keyboard state, releasing any held keys and resetting repeated press tracking.
+
+### `void wait_event()`
+- **Description**: Waits for a window event, blocking the current thread until an event occurs.

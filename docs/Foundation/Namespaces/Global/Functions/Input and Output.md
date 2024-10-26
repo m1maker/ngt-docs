@@ -29,3 +29,17 @@
   - `multiline` (bool): Whether the input allows multiple lines.
 - **Return Type**: string
 - **Description**: Opens an input box with the specified parameters and returns the user's input as a string.
+
+## Standard Streams
+
+### `iostream@ get_cout() property`
+- **Return Type**: iostream@
+- **Description**: Retrieves the standard output stream (`cout`) as a property.
+
+### `iostream@ get_cin() property`
+- **Return Type**: iostream@
+- **Description**: Retrieves the standard input stream (`cin`) as a property.
+
+### `iostream@ get_cerr() property`
+- **Return Type**: iostream@
+- **Description**: Retrieves the standard error stream (`cerr`) as a property.
