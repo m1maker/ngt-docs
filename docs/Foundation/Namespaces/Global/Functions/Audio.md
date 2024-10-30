@@ -68,3 +68,12 @@
 ### `bool get_sound_global_hrtf() property`
 - **Return Type**: bool
 - **Description**: Retrieves whether HRTF is enabled as a property.
+
+### `void set_spatial_blend_max_distance(float distance) property`
+- **Parameters**:
+  - `distance` (float): The maximum distance at which spatial blending is applied.
+- **Description**: Sets the maximum distance up to which spatial audio blending occurs as a property.
+
+### `float get_spatial_blend_max_distance()`
+- **Return Type**: float
+- **Description**: Retrieves the current maximum distance at which spatial audio blending is applied as a property.
