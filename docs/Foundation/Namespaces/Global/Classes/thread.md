@@ -4,9 +4,10 @@ The `thread` class provides a data structure for managing and controlling thread
 
 ## Constructors
 
-### `thread(thread_func@ func)`
+### `thread(thread_func@ func, dictionary@ args = null)`
 - **Parameters**:
   - `func` (thread_func@): A function to be executed by the new thread.
+  - `args` (dictionary@): A dictionary with arguments handled by thread_func.
 - **Description**: Constructs a new `thread` object and starts executing the specified function in a separate thread.
 
 ## Methods

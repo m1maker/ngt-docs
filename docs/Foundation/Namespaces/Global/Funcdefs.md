@@ -12,5 +12,5 @@
 
 ### thread_func
 - **Return Type**: `void`
-- **Parameters**: None
+- **Parameters**: dictionary@ args
 - **Description**: This function defines the entry point for a new thread. It is responsible for the execution of tasks within that thread.
