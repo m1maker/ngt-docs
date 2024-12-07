@@ -15,6 +15,10 @@
   - `retcode` (int): The return code to use when exiting the application.
 - **Description**: Exits the application with the specified return code.
 
+### `void abort()`
+- **Return Type**: void
+- **Description**: Terminates the current program immediately. The exact behavior of this function may vary depending on the implementation and platform, but it typically causes an abnormal termination with no normal cleanup. This function is often used in cases where a fatal error occurs that makes continued execution impossible or unsafe.
+
 ### `bool get_quit_requested() property`
 - **Return Type**: bool
 - **Description**: Gets a flag indicating whether the quit operation has been requested as a property.
