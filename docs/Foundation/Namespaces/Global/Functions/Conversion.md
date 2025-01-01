@@ -130,3 +130,30 @@
   - `wide_string` (const wstring&): The wide string.
   - `utf8_string` (string&out): Output parameter for the converted UTF-8 encoded string.
 - **Description**: Converts a wide string to an UTF-8 encoded string.
+
+### `string float_to_bytes(float number)`
+- **Parameters**:
+  - `number` (float): The floating-point number to convert.
+- **Return Type**: string
+- **Description**: Converts a `float` number into its byte representation and returns it as a string.
+
+
+### `float bytes_to_float(const string&in data)`
+- **Parameters**:
+  - `data` (const string&): The byte data representing a `float`.
+- **Return Type**: float
+- **Description**: Converts the byte data back into a `float` number and returns it.
+
+
+### `string double_to_bytes(double number)`
+- **Parameters**:
+  - `number` (double): The floating-point number to convert.
+- **Return Type**: string
+- **Description**: Converts a `double` number into its byte representation and returns it as a string.
+
+
+### `double bytes_to_double(const string&in data)`
+- **Parameters**:
+  - `data` (const string&): The byte data representing a `double`.
+- **Return Type**: double
+- **Description**: Converts the byte data back into a `double` number and returns it.

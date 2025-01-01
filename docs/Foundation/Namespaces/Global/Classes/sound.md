@@ -25,14 +25,21 @@ The `sound` class provides a data structure for managing and controlling audio p
 - **Return Type**: bool
 - **Description**: Loads audio data from memory and returns `true` if successful; otherwise, returns `false`.
 
-### `bool load_pcm(string memory, uint64 memory_size = 0, int channels = 0, int sample_rate = 0) const`
+### `bool load_pcm(string memory, uint64 memory_size = 0, int channels = 0, int sample_rate = 0, int bits_per_sample = 0) const`
 - **Parameters**:
   - `memory` (string): The memory buffer containing the audio data.
   - `memory_size` (uint64): The size of the memory buffer.
   - `channels` (int): The number of audio channels.
   - `sample_rate` (int): The sample rate of the audio.
+  - `bits_per_sample` (int): The bits per sample of the audio.
 - **Return Type**: bool
-- **Description**: Loads PCM-encoded audio data from memory and returns `true` if successful; otherwise, returns `false`.
+- **Description**: Loads PCM-raw audio data from memory and returns `true` if successful; otherwise, returns `false`.
+
+### `bool load_pcm_buffer(pcm_ring_buffer@ buffer) const`
+- **Parameters**:
+  - `buffer` (pcm_ring_buffer): The ring buffer with raw PCM audio.
+- **Return Type**: bool
+- **Description**: Loads an audio file from PCM ring buffer and returns `true` if successful; otherwise, returns `false`.
 
 ### `bool stream(const string&in filename) const`
 - **Parameters**:

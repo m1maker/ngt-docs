@@ -114,3 +114,14 @@
 
 ### `void wait_event()`
 - **Description**: Waits for a window event, blocking the current thread until an event occurs.
+
+### `bool get_has_joystick() property`
+- **Parameters**: None
+- **Return Type**: bool
+- **Description**: Returns whether any joystick device is currently connected or not.
+
+
+### `array<uint>@ get_joystick_list() property`
+- **Parameters**: None
+- **Return Type**: array<uint> @
+- **Description**: Retrieves an array containing the identifiers of all connected joystick devices. Each element in the array is a uint representing the identifier of a joystick device.

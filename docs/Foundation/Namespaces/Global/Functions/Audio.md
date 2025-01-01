@@ -60,6 +60,17 @@
 - **Return Type**: bool
 - **Description**: Sets the active audio output device and returns `true` if successful; otherwise, returns `false`.
 
+### `array<string>@ get_input_audio_devices()`
+- **Return Type**: array<string> @
+- **Description**: Retrieves an array containing the names of all available input audio devices. Each element in the array is a string representing the name of an audio device.
+
+
+### `bool set_input_audio_device(uint index)`
+- **Parameters**:
+  - `index` (uint): The index of the audio device to set as the current input device.
+- **Return Type**: bool
+- **Description**: Sets the specified audio device as the current input device. Returns `true` if successful; otherwise, returns `false`.
+
 ### `void set_sound_global_hrtf(bool) property`
 - **Parameters**:
   - `enable` (bool): Whether to enable HRTF (Head-Related Transfer Function).

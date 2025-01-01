@@ -1,6 +1,6 @@
 ## Window Management
 
-### `bool show_window(const string&in title, int width = 640, int height = 480, bool enable_renderer = false)`
+### `bool show_window(const string&in title, int width = 640, int height = 480, bool enable_renderer = true)`
 - **Parameters**:
   - `title` (const string&): The title of the window.
   - `width` (int): The width of the window in pixels (default is 640).

@@ -29,10 +29,13 @@ The `tts_voice` class provides a data structure for managing text-to-speech (TTS
   - `text` (const string&): The text to be spoken.
 - **Description**: Interrupts any ongoing TTS operation, speaks the new text, and waits for it to complete before returning.
 
-### `string speak_to_memory(const string&in text, uint64&out buffer_size) const`
+### `string speak_to_memory(const string&in text, uint64&out buffer_size, int&out channels, int&out sample_rate, int&out bits_per_sample) const`
 - **Parameters**:
   - `text` (const string&): The text to be spoken.
   - `buffer_size` (uint64&out): Output parameter for the size of the audio buffer.
+  - `channels` (int&out): Output parameter for number of audio channels.
+  - `sample_rate` (int&out): Output parameter for sample rate in Hz.
+  - `bits_per_sample` (int&out): Output parameter for bits per sample (24 or 32).
 - **Return Type**: string
 - **Description**: Speaks the specified text and returns the generated audio data in memory, along with its size.
 

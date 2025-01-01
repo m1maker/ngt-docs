@@ -30,6 +30,28 @@
 - **Return Type**: string
 - **Description**: Opens an input box with the specified parameters and returns the user's input as a string.
 
+### `string open_file_dialog(const string&in filters = "", const string&in default_location = "")`
+- **Parameters**:
+  - `filters` (const string&): A semicolon-separated list of file filters. Each filter is in the format "Description (*.ext)". Default is an empty string, which means no filtering.
+  - `default_location` (const string&): The default directory to open when the dialog appears. Default is an empty string, which means using the user's home directory.
+- **Return Type**: string
+- **Description**: Opens a file dialog for opening files. Returns the path of the selected file if the user chooses one; otherwise, returns an empty string.
+
+
+### `string save_file_dialog(const string&in filters = "", const string&in default_location = "")`
+- **Parameters**:
+  - `filters` (const string&): A semicolon-separated list of file filters. Each filter is in the format "Description (*.ext)". Default is an empty string, which means no filtering.
+  - `default_location` (const string&): The default directory to open when the dialog appears. Default is an empty string, which means using the user's home directory.
+- **Return Type**: string
+- **Description**: Opens a file dialog for saving files. Returns the path of the selected file if the user chooses one; otherwise, returns an empty string.
+
+
+### `string select_folder_dialog(const string&in default_location = "")`
+- **Parameters**:
+  - `default_location` (const string&): The default directory to open when the dialog appears. Default is an empty string, which means using the user's home directory.
+- **Return Type**: string
+- **Description**: Opens a folder selection dialog. Returns the path of the selected folder if the user chooses one; otherwise, returns an empty string.
+
 ## Standard Streams
 
 ### `iostream@ get_cout() property`

@@ -60,3 +60,10 @@
 ### `string get_SCRIPT_EXECUTABLE_PATH() property`
 - **Return Type**: string
 - **Description**: Retrieves the path to the currently executable directory as a property.
+
+### `powerstate system_power_info(int&out seconds = void, int&out percent = void)`
+- **Parameters**:
+  - `seconds` (int&): Optional parameter to store the remaining battery time in seconds.
+  - `percent` (int&): Optional parameter to store the current battery percentage.
+- **Return Type**: powerstate
+- **Description**: Retrieves information about the system's power state. If `seconds` and/or `percent` are provided, they will be set to the remaining battery time and percentage, respectively. The function returns a `powerstate` indicating the current power status (e.g., plugged in, on battery).
