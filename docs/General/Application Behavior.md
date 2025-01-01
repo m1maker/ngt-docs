@@ -2,7 +2,7 @@
 
 ## Window
 
-To display a window, use the show_window function. If you plan to utilize rendering, make sure to set the enable_renderer flag to true in show_window; otherwise, no graphics will be displayed.
+To manage the application window effectively, utilize the show_window function. Setting the enable_renderer flag to true is crucial if your application requires rendering graphics or supports input devices like joysticks or gamepads. If these features are not used, you may set the flag to false, allowing the window to handle events in the background without being tied to the rendering loop.
 
 ## Application Loop
 
@@ -24,7 +24,10 @@ Important: It is essential to call one of these functions if rendering is enable
 
 You can modify the value of `update_window_freq` (which controls the screen refresh rate in milliseconds) at any time. However, be aware that increasing this frequency may slow down event processing. Use window_present when you have completed all scenes for rendering.
 
+## Background Tasks
+
+For applications that require concurrent processing, consider implementing a dedicated thread for background tasks. This can help maintain responsiveness in the main application loop while performing resource-intensive operations such as loading assets or processing data.
+
 ## Exiting
 
-When a quit request event is received from the user, the loop is terminated gracefully. This is the preferred method for exiting the program, as it allows automatic control objects to call their destructors and free resources properly. Avoid overusing the exit function unless there is a compelling reason to terminate the program unexpectedly. If you need to return a return code, declare main as int main.
-
+When a quit request event is received from the user, the loop is terminated gracefully. This is the preferred method for exiting the program, as it allows automatic control objects to call their destructors and free resources properly. Avoid overusing the exit function unless there is a compelling reason to abort execution. If you need to return a return code, declare main as int main.
