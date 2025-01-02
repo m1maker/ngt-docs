@@ -51,21 +51,19 @@ The `renderer` class provides a data structure for handling rendering operations
 - **Return Type**: texture@
 - **Description**: Returns the current rendering target as a property.
 
-### `bool set_logical_presentation(int w, int h, rendererlogicalpresentation mode, scalemode scale_mode)`
+### `bool set_logical_presentation(int w, int h, rendererlogicalpresentation mode)`
 - **Parameters**:
   - `w` (int): The logical width.
   - `h` (int): The logical height.
   - `mode` (rendererlogicalpresentation): The presentation mode.
-  - `scale_mode` (scalemode): The scaling mode.
-- **Return Type**: bool
+  **Return Type**: bool
 - **Description**: Sets the logical presentation properties of the renderer.
 
-### `bool get_logical_presentation(int&out w, int&out h, rendererlogicalpresentation&out mode, scalemode&out scale_mode)`
+### `bool get_logical_presentation(int&out w, int&out h, rendererlogicalpresentation&out mode)`
 - **Parameters**:
   - `w` (int&out): Output parameter for the logical width.
   - `h` (int&out): Output parameter for the logical height.
   - `mode` (rendererlogicalpresentation&out): Output parameter for the presentation mode.
-  - `scale_mode` (scalemode&out): Output parameter for the scaling mode.
 - **Return Type**: bool
 - **Description**: Retrieves the logical presentation properties of the renderer.
 

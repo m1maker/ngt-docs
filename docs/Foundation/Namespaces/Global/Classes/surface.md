@@ -4,28 +4,51 @@ The `surface` class provides a data structure for handling bitmap images and sur
 
 ## Constructors
 
-### `surface(int width, int height, pixelformat format)`
+### `surface(int width, int height, pixelformat format, const string&in pixels, int pitch)`
 - **Parameters**:
   - `width` (int): The width of the surface.
   - `height` (int): The height of the surface.
   - `format` (pixelformat): The pixel format for the surface.
-- **Description**: Constructs a new `surface` object with the specified dimensions and pixel format.
-
-### `surface(int width, int height, pixelformat format, uint64 pixels, int pitch)`
-- **Parameters**:
-  - `width` (int): The width of the surface.
-  - `height` (int): The height of the surface.
-  - `format` (pixelformat): The pixel format for the surface.
-  - `pixels` (uint64): The memory buffer containing the pixel data.
+  - `pixels` (string): The memory buffer containing the pixel data.
   - `pitch` (int): The pitch of the pixel data.
 - **Description**: Constructs a new `surface` object with the specified dimensions, pixel format, and initial pixel data.
 
 ### `surface(const string&in filename)`
 - **Parameters**:
-  - `filename` (const string&): The path to the image file.
-- **Description**: Constructs a new `surface` object by loading an image from a file.
+  - `filename` (const string&): The path to the BMP file.
+- **Description**: Constructs a new `surface` object by loading an image from a BMP file.
 
 ## Methods
+
+
+### `bool load_bmp(const string& filename)`
+- **Parameters**:
+  - `filename` (string): The path to the BMP file to be loaded.
+- **Return Type**: bool
+- **Description**: Loads a BMP image from the specified file and returns `true` if successful; otherwise, returns `false`.
+
+### `bool load_from_pixels(int width, int height, pixelformat format, const string& pixels, int pitch)`
+- **Parameters**:
+  - `width` (int): The width of the pixel data.
+  - `height` (int): The height of the pixel data.
+  - `format` (pixelformat): The pixel format of the data.
+  - `pixels` (string): The pixel data as a string.
+  - `pitch` (int): The pitch of the pixel data.
+- **Return Type**: bool
+- **Description**: Loads an image from raw pixel data and returns `true` if successful; otherwise, returns `false`.
+
+### `bool load_from_memory(const string& data, uint64 size)`
+- **Parameters**:
+  - `data` (string): The memory buffer containing the image data.
+  - `size` (uint64): The size of the memory buffer in bytes.
+- **Return Type**: bool
+- **Description**: Loads an image from a memory buffer and returns `true` if successful; otherwise, returns `false`.
+
+### `void close()`
+- **Parameters**:
+  - None
+- **Return Type**: void
+- **Description**: Closes the surface and releases any resources associated with it.
 
 ### `void set_colorspace(int colorspace) const property`
 - **Parameters**:
