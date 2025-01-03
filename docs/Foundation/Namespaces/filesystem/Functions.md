@@ -16,7 +16,7 @@
 - **Return Type**: void
 - **Description**: Changes the current working directory to the specified new path. The method does not return any value.
 
-### `void list_directory(const string&in path = current_path, array<string>@ files = null, array<string>@ folders = null, const string&in pattern = '*')`
+### `void list_directory(const string&in path = current_path, array<string>@ files = null, array<string>@ folders = null, const string&in file_pattern = '*', const string&in folder_pattern = '*')`
 - **Return Type**: void
 - **Description**: Lists all files and directories in the specified path that match the given pattern. If no arrays are provided for storing results, the method will not store them.
 
